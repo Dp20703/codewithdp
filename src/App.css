@@ -1,0 +1,10 @@
+/* :root {
+  --primary-color: hsl(0, 0, 5%);
+  --text-color: hsl(0, 1%, 45%);
+  --hover-color: hsl(0, 2%, 35%);
+}
+
+* {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+} */
