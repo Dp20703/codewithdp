@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../styles/Navbar.css";
 const Navbar = () => {
   const openSideBar = () => {
@@ -6,13 +7,14 @@ const Navbar = () => {
     navbarToggle.classList.toggle("active");
     navbarMenu.classList.toggle("active");
   };
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <a href="#" className="navbar-logo">
+          <Link to="/" className="navbar-logo">
             codewithdp
-          </a>
+          </Link>
           <button className="navbar-toggle" onClick={openSideBar}>
             <span className="bar"></span>
             <span className="bar"></span>
@@ -21,21 +23,21 @@ const Navbar = () => {
 
           <ul className="navbar-menu">
             <li>
-              <a href="#" className="active">
+              <Link to="/" className="active">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="/services">Services</Link>
             </li>
           </ul>
         </div>
