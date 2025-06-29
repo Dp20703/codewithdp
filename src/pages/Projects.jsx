@@ -1,13 +1,27 @@
 import Navbar from "../components/layout/Navbar";
+import ProjectCard from "../components/sections/ProjectCard";
 
 const Projects = () => {
   return (
-    <div>
-      <Navbar />
-      <h1 className="text-5xl text-center absolute top-1/2 right-1/2 translate-x-1/2 translate-y-1/2">
-        Projects Page
-      </h1>
-    </div>
+    <>
+      <section className="h-fit w-full" style={{ padding: "2rem 2rem" }}>
+        <div className="flex flex-col items-center justify-center gap-8">
+          <div className="w-full">
+            <h2 className="text-[#ffffff] text-3xl">Headings</h2>
+            <h3 className="text-[#4e4e4e] text-2xl">subheading</h3>
+          </div>
+
+          <div className="flex gap-5 flex-wrap items-center justify-start">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

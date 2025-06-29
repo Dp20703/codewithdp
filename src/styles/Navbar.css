@@ -1,16 +1,3 @@
-:root {
-  --primary-color: #1e1e1e;
-  --secondary-color: #232323;
-  --third-color: #383838;
-  --fourth-color: #444444;
-  --hover-color: #272832;
-  --accent-color: #0071ff;
-  --text-color: #ffffff;
-  --second-text-color: #bfbfbf;
-  --third-text-color: #eaeaea;
-  --active-color: #444444;
-}
-
 /* navbar style */
 
 .navbar {
@@ -81,6 +68,8 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* responsive style */
+
 @media screen and (max-width: 880px) {
   .navbar {
     backdrop-filter: none;
@@ -132,7 +121,7 @@
 
 @media screen and (max-width: 480px) {
   .navbar-container {
-    padding: .8rem 1rem;
+    padding: 0.8rem 1rem;
   }
   .navbar-logo {
     font-size: 1.5rem;
