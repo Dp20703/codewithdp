@@ -1,7 +1,7 @@
 const HeroBasic = () => {
   return (
     <>
-      <section className=" bg-[#232323] h-96 w-full flex items-center justify-center">
+      <section className=" bg-[#232323] h-[45rem] w-full flex items-center justify-center">
         <div className="flex items-center justify-center flex-col gap-3">
           <h2 className="text-5xl text-[#ffffff] text-center">
             Welcome to my website
