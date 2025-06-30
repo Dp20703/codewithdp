@@ -46,10 +46,11 @@
   color: var(--text-color);
 }
 
-.navbar-menu li a.active.navbar-menu li a:hover {
+.navbar-menu li a.active,
+.navbar-menu li a:hover {
   background-color: var(--active-color);
   color: var(--third-text-color);
-  border: 0.02rem solid #ffffff7c !important;
+  border: 0.01rem solid gray !important;
 }
 
 .navbar-toggle {

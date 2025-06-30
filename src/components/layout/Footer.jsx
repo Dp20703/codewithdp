@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="h-96 w-full" style={{ borderTop: ".1rem solid gray" }}>
+    <section className="w-full" style={{ borderTop: ".1rem solid gray" }}>
       <div
         className="flex justify-around gap-5"
         style={{ padding: "2rem 3rem" }}
@@ -49,24 +49,13 @@ const Footer = () => {
                 className="h-8 w-8 inline bg-white rounded-full "
                 alt="github"
               />{" "}
-              Github
-            </li>
-            <li className="text-[#bbbbbb] hover:text-[#ffffff]">
-              <img
-                src="/assets/icons/x-50.png"
-                className="h-8 w-8 inline  bg-white rounded-full"
-                style={{ padding: ".1rem" }}
-                alt="twiiter"
-              />{" "}
-              Twitter (X)
-            </li>
-            <li className="text-[#bbbbbb] hover:text-[#ffffff]">
-              <img
-                src="/assets/icons/instagram-48.png"
-                className="h-8 w-8 inline  bg-white rounded-full "
-                alt="instagram"
-              />{" "}
-              Instagram
+              <a
+                href="https://github.com/dp20703"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </li>
             <li className="text-[#bbbbbb] hover:text-[#ffffff]">
               <img
@@ -75,11 +64,49 @@ const Footer = () => {
                 className="h-8 w-8 inline  bg-white rounded-full "
                 alt="linkedin"
               />{" "}
-              Linkedin
+              <a
+                href="https://www.linkedin.com/in/darshan-prajapati-523202282/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li className="text-[#bbbbbb] hover:text-[#ffffff]">
+              <img
+                src="/assets/icons/x-50.png"
+                className="h-8 w-8 inline  bg-white rounded-full"
+                style={{ padding: ".1rem" }}
+                alt="twiiter"
+              />{" "}
+              <a
+                href="https://www.twitter.com/darshanrp2073"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter (X)
+              </a>
+            </li>
+            <li className="text-[#bbbbbb] hover:text-[#ffffff]">
+              <img
+                src="/assets/icons/instagram-48.png"
+                className="h-8 w-8 inline  bg-white rounded-full "
+                alt="instagram"
+              />{" "}
+              <a
+                href="https://www.instagram.com/darshan_2073_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
             </li>
           </ul>
         </div>
       </div>
+      <h2 className="text-center" style={{ padding: "2rem 0" }}>
+        Made with ❤️ in india
+      </h2>
     </section>
   );
 };
