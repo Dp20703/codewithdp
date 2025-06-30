@@ -29,9 +29,9 @@ const Footer = () => {
             <li className="text-[#bbbbbb] hover:text-[#ffffff]">
               <Link to="/contact">Contact</Link>
             </li>
-            <li className="text-[#bbbbbb] hover:text-[#ffffff]">
+            {/* <li className="text-[#bbbbbb] hover:text-[#ffffff]">
               <Link to="/services">Services</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
