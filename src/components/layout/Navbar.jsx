@@ -54,14 +54,14 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/services"
                 className={`${location.pathname === "/services" && "active"}`}
               >
                 Services
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>
