@@ -4,7 +4,7 @@ const ContactSection = () => {
   return (
     <section
       className="w-full h-screen flex items-center justify-between"
-      style={{ padding: "2rem 2rem" }}
+      style={{ margin: "5rem 0" }}
     >
       <div className="w-1/2" style={{ padding: "2rem 2rem" }}>
         <div className="w-full">

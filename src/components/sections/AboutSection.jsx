@@ -20,7 +20,12 @@ const AboutSection = () => {
         >
           <div className="w-full h-1/5">
             <h2 className="text-5xl text-[#ffffff] font-bold">About</h2>
-            <h3 className="text-xl text-[#444444]">subheading</h3>
+            <h3
+              className="text-xl text-[#444444] "
+              style={{ margin: ".5rem 0" }}
+            >
+              subheading
+            </h3>
           </div>
           <div className="w-full text-[#bfbfbf]">
             <p className="text-2xl">
