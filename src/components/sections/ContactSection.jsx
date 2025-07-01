@@ -40,7 +40,9 @@ const ContactSection = () => {
       </div>
 
       <div className="w-1/2" style={{ padding: "2rem 8rem" }}>
-        <div
+        <form
+          action="https://formsubmit.co/codewithdp2073@gmail.com"
+          method="POST"
           className="w-full rounded-xl"
           style={{ border: ".1rem solid gray", padding: "2rem 2rem" }}
         >
@@ -132,6 +134,7 @@ const ContactSection = () => {
           </div>
           <div className="w-full" style={{ margin: "2rem 0" }}>
             <button
+              type="submit"
               className="w-full text-[#444444] bg-[#eaeaea] rounded text-xl hover:bg-[#ffffff]"
               style={{
                 padding: ".5rem .8rem",
@@ -141,7 +144,12 @@ const ContactSection = () => {
               Send Message
             </button>
           </div>
-        </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:5173/contact"
+          />
+        </form>
       </div>
     </section>
   );
