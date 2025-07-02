@@ -4,7 +4,7 @@ const ProjectCard = () => {
       title: "StockTally",
       description:
         " StockTally is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) that allows users to track and manage their stock trades. Users can add buy/sell entries, close trades, and automatically calculate profits or losses.",
-      imgURL: "/public/assets/images/StockTally.png",
+      imgURL: " /assets/images/StockTally.png",
       live: "https://stock-tally.vercel.app",
       github: "https://github.com/Dp20703/StockTally",
     },
@@ -12,7 +12,7 @@ const ProjectCard = () => {
       title: "iNotebook",
       description:
         "iNotebook is a secure and user-friendly full-stack notes app that allows users to register, log in, and manage personal notes from anywhere. Built with React, Node.js, Express, and MongoDB, it features JWT-based authentication and a responsive UI for seamless note organization and editing.",
-      imgURL: "/public/assets/images/inotebook.jpg",
+      imgURL: " /assets/images/inotebook.jpg",
       live: "https://inotebook-eta-one.vercel.app",
       github: "https://github.com/Dp20703/iNotebook",
     },
@@ -20,7 +20,7 @@ const ProjectCard = () => {
       title: "Property-Renting",
       description:
         "Property Rental Web App – MERN Stack A full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that allows users to search, list, and manage rental properties. The platform provides a seamless experience for both property owners and renters.",
-      imgURL: "/public/assets/images/property-renting.png",
+      imgURL: " /assets/images/property-renting.png",
       live: "https://renting-property-user.vercel.app/",
       github: "https://github.com/Dp20703/Property-Renting",
     },
@@ -28,7 +28,7 @@ const ProjectCard = () => {
       title: "NewsMonkey",
       description:
         "NewsMonkey is a dynamic news web application built using the MERN stack. It fetches the latest news from a third-party API and displays categorized updates (e.g., business, sports, entertainment, technology, etc.) with support for Indian and international news.",
-      imgURL: "/public/assets/images/newsmonkey.png",
+      imgURL: " /assets/images/newsmonkey.png",
       live: "https://news-monkey-rho.vercel.app/",
       github: "https://github.com/Dp20703/NewsMonkey",
     },
@@ -36,7 +36,7 @@ const ProjectCard = () => {
       title: "Uber",
       description:
         "A frontend clone of the Uber ride booking interface built using React.js. It replicates key UI elements such as pickup/dropoff input fields, ride selection options, and estimated fare display. The project emphasizes clean design, intuitive layout, and real-time user interactions to simulate the Uber user experience.",
-      imgURL: "/public/assets/images/uber.jpg",
+      imgURL: " /assets/images/uber.jpg",
       live: "",
       github: "https://github.com/Dp20703/Uber",
     },
@@ -44,7 +44,7 @@ const ProjectCard = () => {
       title: "Employee Management System",
       description:
         "Employee Management System with Admin & Employee Dashboards – Task assignment, tracking, and status updates built with MERN stack & Tailwind CSS.",
-      imgURL: "/public/assets/images/ems.png",
+      imgURL: " /assets/images/ems.png",
       live: "https://ems-orcin.vercel.app/",
       github: "http://github.com/Dp20703/ems",
     },

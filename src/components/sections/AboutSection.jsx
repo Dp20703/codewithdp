@@ -24,21 +24,28 @@ const AboutSection = () => {
               className="text-xl text-[#444444] "
               style={{ margin: ".5rem 0" }}
             >
-              subheading
+              Get to Know Me
             </h3>
           </div>
           <div className="w-full text-[#bfbfbf]">
-            <p className="text-2xl">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Distinctio, laborum laudantium debitis repellat excepturi quaerat
-              praesentium, libero necessitatibus provident autem quis voluptate
+            <p className="text-xl">
+              I'm Darshan Prajapati, a dedicated MERN stack developer with a
+              passion for crafting clean and functional web applications. Having
+              recently completed my BCA, I’ve been constantly improving my
+              skills by building real-world projects like StockTally and
+              Property-Renting. I enjoy turning complex problems into smooth
+              user experiences and love working across both frontend and backend
+              technologies.
             </p>
             <br />
             <br />
-            <p className="text-2xl">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptates quis qui, libero vitae suscipit veritatis adipisci,
-              earum nemo, error recusandae ratione quasi.
+            <p className="text-xl">
+              Beyond just writing code, I'm deeply focused on learning modern
+              tools, UI/UX best practices, and performance optimization. Whether
+              it’s developing a full-stack project or designing layouts with
+              TailwindCSS, I strive to build scalable and maintainable
+              solutions. I’m also preparing for my MCA while actively exploring
+              new opportunities to grow as a developer.
             </p>
           </div>
         </div>
