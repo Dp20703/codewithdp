@@ -32,7 +32,7 @@ const ProjectCard = () => {
       live: "https://news-monkey-rho.vercel.app/",
       github: "https://github.com/Dp20703/NewsMonkey",
     },
-      {
+    {
       title: "Uber",
       description:
         "A frontend clone of the Uber ride booking interface built using React.js. It replicates key UI elements such as pickup/dropoff input fields, ride selection options, and estimated fare display. The project emphasizes clean design, intuitive layout, and real-time user interactions to simulate the Uber user experience.",
@@ -40,7 +40,7 @@ const ProjectCard = () => {
       live: "",
       github: "https://github.com/Dp20703/Uber",
     },
-     {
+    {
       title: "Employee Management System",
       description:
         "Employee Management System with Admin & Employee Dashboards – Task assignment, tracking, and status updates built with MERN stack & Tailwind CSS.",
@@ -48,7 +48,6 @@ const ProjectCard = () => {
       live: "https://ems-orcin.vercel.app/",
       github: "http://github.com/Dp20703/ems",
     },
-  
   ];
   return (
     <>
@@ -56,7 +55,8 @@ const ProjectCard = () => {
         return (
           <>
             <div
-              className=" w-[32rem] overflow-hidden flex flex-col gap-5 bg-black  rounded-xl"
+              key={idx}
+              className="h-[38rem] w-[32rem] overflow-hidden flex flex-col gap-5 bg-black  rounded-xl"
               style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
             >
               <div
@@ -71,7 +71,7 @@ const ProjectCard = () => {
               </div>
 
               <div
-                className="h-1/2 w-full flex flex-col gap-2 justify-center"
+                className="h-1/2 w-full flex flex-col gap-5 justify-center"
                 style={{ padding: "2rem 1rem" }}
               >
                 <div className="flex justify-between items-center">

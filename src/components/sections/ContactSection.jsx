@@ -4,13 +4,13 @@ const ContactSection = () => {
   return (
     <section
       className="w-full h-screen flex items-center justify-between"
-      style={{ margin: "5rem 0" }}
+      style={{ margin: "1rem 0" }}
     >
       <div className="w-1/2" style={{ padding: "2rem 2rem" }}>
         <div className="w-full">
           <div>
             <h2
-              className="text-4xl text-[#ffffff] font-bold"
+              className="text-3xl text-[#ffffff] font-bold"
               style={{ padding: "0 2rem" }}
             >
               Contact Us
