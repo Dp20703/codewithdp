@@ -2,15 +2,18 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="h-screen w-full flex justify-center items-center">
-      <div className="w-1/2" style={{ padding: "2rem 6rem" }}>
+    <div
+      className="h-screen w-full flex justify-center items-center"
+      style={{ padding: "2rem 4rem" }}
+    >
+      <div className="w-1/2">
         <img
           src="https://plus.unsplash.com/premium_photo-1746927715759-03f68bbd8c9a?q=80&w=744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="contact"
           className="h-[40rem] w-[40rem] rounded-xl  object-cover object-right"
         />
       </div>
-      <div className="w-1/2" style={{ padding: "5rem 2rem" }}>
+      <div className="w-1/2">
         <div
           style={{
             padding: "2rem 2rem",

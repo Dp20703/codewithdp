@@ -3,10 +3,10 @@ import React from "react";
 const ContactSection = () => {
   return (
     <section
-      className="w-full h-screen flex items-center justify-between"
-      style={{ margin: "1rem 0" }}
+      className="w-full h-fit flex items-cente justify-between"
+      style={{ padding: "2rem 2rem" }}
     >
-      <div className="w-1/2" style={{ padding: "2rem 2rem" }}>
+      <div className="w-1/2">
         <div className="w-full">
           <div>
             <h2
@@ -39,7 +39,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div className="w-1/2" style={{ padding: "2rem 8rem" }}>
+      <div className="w-1/2" style={{ padding: "2rem 4rem" }}>
         <form
           action="https://formsubmit.co/codewithdp2073@gmail.com"
           method="POST"

@@ -3,6 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import ProjectSection from "../components/sections/ProjectSection";
 
 const Projects = () => {
+    document.title = "Projects | codewithdp";
   return (
     <>
       <Navbar />

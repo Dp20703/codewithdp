@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
+  document.title = "NotFound | codewithdp";
   return (
     <>
       <div className="text-center absolute top-1/2 right-1/2 translate-1/2">

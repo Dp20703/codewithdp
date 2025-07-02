@@ -6,12 +6,13 @@ import ContactSection from "../components/sections/ContactSection";
 import AboutSection from "../components/sections/AboutSection";
 
 const Home = () => {
+  document.title = "Home | codewithdp";
   return (
     <>
       <Navbar />
       <HeroBasic />
       <ProjectSection />
-      <AboutSection/>
+      <AboutSection />
       <ContactSection />
       <Footer />
     </>

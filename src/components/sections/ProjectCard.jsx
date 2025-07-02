@@ -56,7 +56,7 @@ const ProjectCard = () => {
           <>
             <div
               key={idx}
-              className="h-[38rem] w-[32rem] overflow-hidden flex flex-col gap-5 bg-black  rounded-xl"
+              className="h-[38rem] w-[28rem] overflow-hidden flex flex-col  gap-8 bg-[#232323]  rounded-xl"
               style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
             >
               <div
@@ -64,16 +64,13 @@ const ProjectCard = () => {
                 style={{ border: ".1rem solid gray" }}
               >
                 <img
-                  src={`${project.imgURL}`}
-                  alt={`${project.title}`}
+                  src={project.imgURL}
+                  alt={project.title}
                   className="object-cover w-full h-full"
                 />
               </div>
 
-              <div
-                className="h-1/2 w-full flex flex-col gap-5 justify-center"
-                style={{ padding: "2rem 1rem" }}
-              >
+              <div className="h-1/2 w-full flex flex-col gap-5 justify-center">
                 <div className="flex justify-between items-center">
                   <h2 className="text-[#ffffff] text-2xl">{project.title}</h2>
                   <div className="flex items-center justify-around w-1/4">
@@ -95,7 +92,7 @@ const ProjectCard = () => {
                       rel="noopener noreferrer"
                     >
                       <span
-                        className="bg-[#444444] rounded-full text-xl "
+                        className="bg-[#444444] hover:bg-[#232323] rounded-full text-xl "
                         style={{
                           padding: ".2rem .6rem",
                           border: ".1rem solid white",
@@ -106,7 +103,7 @@ const ProjectCard = () => {
                     </a>
                   </div>
                 </div>
-                <p className="text-[#4e4e4e] text-xl">{project.description}</p>
+                <p className="text-[#bfbfbf] text-xl">{project.description}</p>
               </div>
             </div>
           </>

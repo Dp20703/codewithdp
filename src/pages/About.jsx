@@ -3,6 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import AboutSection from "../components/sections/AboutSection";
 
 const About = () => {
+    document.title = "About | codewithdp";
   return (
     <>
       <Navbar />
