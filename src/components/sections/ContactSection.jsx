@@ -10,7 +10,7 @@ const ContactSection = () => {
         <div className="w-full">
           <div>
             <h2
-              className="text-5xl text-[#ffffff] font-bold"
+              className="text-4xl text-[#ffffff] font-bold"
               style={{ padding: "0 2rem" }}
             >
               Contact Us
