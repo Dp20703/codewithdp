@@ -18,7 +18,7 @@ const ContactSection = () => {
           </div>
           <div
             style={{ padding: "2rem 2rem" }}
-            className="text-xl w-4/5 flex flex-col gap-5 text-[#eaeaea] "
+            className="text-[1.1rem] w-4/5 flex flex-col gap-5 text-[#eaeaea] "
           >
             <p>
               We are available for questions, feedback, or collaboration
@@ -39,7 +39,7 @@ const ContactSection = () => {
         </div>
       </div>
 
-      <div className="w-1/2" style={{ padding: "2rem 4rem" }}>
+      <div className="w-1/2" style={{ padding: "0 4rem" }}>
         <form
           action="https://formsubmit.co/codewithdp2073@gmail.com"
           method="POST"
@@ -47,11 +47,11 @@ const ContactSection = () => {
           style={{ border: ".1rem solid gray", padding: "2rem 2rem" }}
         >
           <div className="w-full" style={{ margin: ".5rem 0" }}>
-            <label htmlFor="name" className="text-white w-full text-xl">
+            <label htmlFor="name" className="text-white w-full text-[1.1rem]">
               Name
             </label>
             <input
-              className="w-full text-[#ffffff] bg-[#232323] rounded text-xl placeholder:text-[#bfbfbf]"
+              className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
               style={{
                 padding: ".5rem .8rem",
                 margin: ".5rem 0",
@@ -64,11 +64,11 @@ const ContactSection = () => {
             />
           </div>
           <div className="w-full" style={{ margin: ".5rem 0" }}>
-            <label htmlFor="email" className="text-white w-full text-xl">
+            <label htmlFor="email" className="text-white w-full text-[1.1rem]">
               Email
             </label>
             <input
-              className="w-full text-[#ffffff] bg-[#232323] rounded text-xl placeholder:text-[#bfbfbf]"
+              className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
               style={{
                 padding: ".5rem .8rem",
                 margin: ".5rem 0",
@@ -81,12 +81,15 @@ const ContactSection = () => {
             />
           </div>
           <div className="w-full" style={{ margin: ".5rem 0" }}>
-            <label htmlFor="phoneno" className="text-white w-full text-xl">
+            <label
+              htmlFor="phoneno"
+              className="text-white w-full text-[1.1rem]"
+            >
               Phone number
             </label>
             <input
               min={0}
-              className="w-full text-[#ffffff] bg-[#232323] rounded text-xl placeholder:text-[#bfbfbf]"
+              className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
               style={{
                 padding: ".5rem .8rem",
                 margin: ".5rem 0",
@@ -99,11 +102,14 @@ const ContactSection = () => {
             />
           </div>
           <div className="w-full" style={{ margin: ".5rem 0" }}>
-            <label htmlFor="subject" className="text-white w-full text-xl">
+            <label
+              htmlFor="subject"
+              className="text-white w-full text-[1.1rem]"
+            >
               Subject
             </label>
             <input
-              className="w-full text-[#ffffff] bg-[#232323] rounded text-xl placeholder:text-[#bfbfbf]"
+              className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
               style={{
                 padding: ".5rem .8rem",
                 margin: ".5rem 0",
@@ -116,13 +122,16 @@ const ContactSection = () => {
             />
           </div>
           <div className="w-full" style={{ margin: ".5rem 0" }}>
-            <label htmlFor="message" className="text-white w-full text-xl">
+            <label
+              htmlFor="message"
+              className="text-white w-full text-[1.1rem]"
+            >
               Message
             </label>
             <textarea
               name="message"
               id="message"
-              className="w-full text-[#ffffff] bg-[#232323] rounded text-xl placeholder:text-[#bfbfbf]"
+              className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
               style={{
                 padding: ".5rem .8rem",
                 margin: ".5rem 0",
@@ -132,10 +141,10 @@ const ContactSection = () => {
               cols={2}
             />
           </div>
-          <div className="w-full" style={{ margin: "2rem 0" }}>
+          <div className="w-full" style={{ margin: "1rem 0" }}>
             <button
               type="submit"
-              className="w-full text-[#444444] bg-[#eaeaea] rounded text-xl hover:bg-[#ffffff]"
+              className="w-full text-[#444444] bg-[#eaeaea] rounded text-[1.1rem] hover:bg-[#ffffff]"
               style={{
                 padding: ".5rem .8rem",
                 margin: ".5rem 0",

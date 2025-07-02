@@ -1,3 +1,4 @@
+import GlareHover from "../../blocks/Animations/GlareHover/GlareHover";
 const ProjectCard = () => {
   const projects = [
     {
@@ -60,14 +61,25 @@ const ProjectCard = () => {
               style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
             >
               <div
-                className="bg-[#e2e2e2] h-56 w-52 rounded-2xl overflow-hidden"
+                className="bg-[#e2e2e2] h-54 w-52 rounded-2xl overflow-hidden"
                 style={{ border: ".1rem solid gray" }}
               >
-                <img
-                  src={project.imgURL}
-                  alt={project.title}
-                  className="object-cover w-full h-full"
-                />
+                <GlareHover
+                  height="13.5rem"
+                  width="13rem"
+                  glareColor="#ffffff"
+                  glareOpacity={0.3}
+                  glareAngle={-30}
+                  glareSize={300}
+                  transitionDuration={800}
+                  playOnce={false}
+                >
+                  <img
+                    src={project.imgURL}
+                    alt={project.title}
+                    className="object-cover w-full h-full"
+                  />
+                </GlareHover>
               </div>
 
               <div className="h-1/2 w-full flex flex-col gap-5 justify-center">
@@ -103,7 +115,9 @@ const ProjectCard = () => {
                     </a>
                   </div>
                 </div>
-                <p className="text-[#bfbfbf] text-xl">{project.description}</p>
+                <p className="text-[#bfbfbf] text-[1.1rem]">
+                  {project.description}
+                </p>
               </div>
             </div>
           </>

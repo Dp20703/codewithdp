@@ -1,4 +1,5 @@
 import React from "react";
+import PixelTransition from "../../blocks/Animations/PixelTransition/PixelTransition";
 
 const AboutSection = () => {
   return (
@@ -7,11 +8,21 @@ const AboutSection = () => {
       style={{ padding: "2rem 4rem" }}
     >
       <div className="w-1/2">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1746927715759-03f68bbd8c9a?q=80&w=744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="contact"
-          className="h-[40rem] w-[40rem] rounded-xl  object-cover object-right"
-        />
+        <div className="w-[35rem]">
+          <PixelTransition
+            firstContent={
+              <img
+                src="https://plus.unsplash.com/premium_photo-1746927715759-03f68bbd8c9a?q=80&w=744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="contact"
+                className=" rounded-xl h-[40rem] w-full object-cover object-right"
+              />
+            }
+            gridSize={12}
+            pixelColor="#ffffff"
+            animationStepDuration={0.4}
+            className="custom-pixel-card"
+          />
+        </div>
       </div>
       <div className="w-1/2">
         <div
@@ -22,7 +33,7 @@ const AboutSection = () => {
           className=" h-[40rem] w-full rounded-xl"
         >
           <div className="w-full h-1/5">
-            <h2 className="text-5xl text-[#ffffff] font-bold">About</h2>
+            <h2 className="text-[2rem] text-[#ffffff] font-bold">About</h2>
             <h3
               className="text-xl text-[#444444] "
               style={{ margin: ".5rem 0" }}
@@ -30,8 +41,8 @@ const AboutSection = () => {
               Get to Know Me
             </h3>
           </div>
-          <div className="w-full text-[#bfbfbf]">
-            <p className="text-xl">
+          <div className="w-full text-[#bfbfbf] text-[1.1rem]">
+            <p>
               I'm Darshan Prajapati, a dedicated MERN stack developer with a
               passion for crafting clean and functional web applications. Having
               recently completed my BCA, I’ve been constantly improving my
@@ -42,7 +53,7 @@ const AboutSection = () => {
             </p>
             <br />
             <br />
-            <p className="text-xl">
+            <p>
               Beyond just writing code, I'm deeply focused on learning modern
               tools, UI/UX best practices, and performance optimization. Whether
               it’s developing a full-stack project or designing layouts with
