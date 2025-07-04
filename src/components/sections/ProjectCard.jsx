@@ -70,35 +70,37 @@ const ProjectCard = () => {
             >
               <div
                 key={idx}
-                className="h-[38rem] w-[28rem] overflow-hidden flex flex-col  gap-8 bg-[#232323]  rounded-xl"
+                className="lg:h-[38rem] lg:w-[28rem] sm:h-[30rem] sm:w-[17rem] md:h-[36rem] md:w-[22rem] overflow-hidden flex flex-col  gap-8 bg-[#232323]  rounded-xl "
                 style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
               >
-                <div
-                  className="bg-[#e2e2e2] h-54 w-52 rounded-2xl overflow-hidden"
-                  style={{ border: ".1rem solid gray" }}
-                >
-                  <GlareHover
-                    height="13.5rem"
-                    width="13rem"
-                    glareColor="#ffffff"
-                    glareOpacity={0.3}
-                    glareAngle={-30}
-                    glareSize={300}
-                    transitionDuration={800}
-                    playOnce={false}
-                  >
-                    <img
-                      src={project.imgURL}
-                      alt={project.title}
-                      className="object-cover w-full h-full"
-                    />
-                  </GlareHover>
+                <div className="h-1/2 w-full">
+                  <div className="lg:h-54 lg:w-52  md:h-48 md:w-46 sm:h-32 sm:w-32 rounded-2xl overflow-hidden">
+                    <GlareHover
+                      height="100%"
+                      width="100%"
+                      glareColor="#ffffff"
+                      glareOpacity={0.3}
+                      glareAngle={-30}
+                      glareSize={300}
+                      transitionDuration={800}
+                      playOnce={false}
+                    >
+                      <img
+                        src={project.imgURL}
+                        alt={project.title}
+                        className="object-cover  object-top-right"
+                        // style={{ border: ".1rem solid gray" }}
+                      />
+                    </GlareHover>
+                  </div>
                 </div>
 
                 <div className="h-1/2 w-full flex flex-col gap-5 justify-center">
-                  <div className="flex justify-between items-center w-full">
-                    <h2 className="text-[#ffffff] text-2xl">{project.title}</h2>
-                    <div className="flex items-center justify-end gap-2 w-1/3">
+                  <div className="flex justify-between items-center w-full flex-wrap">
+                    <h2 className="text-[#ffffff] lg:text-2xl md:text-xl sm:text-[1rem] w-1/2">
+                      {project.title}
+                    </h2>
+                    <div className="flex items-center justify-end gap-2 w-1/2">
                       <a
                         href={project.github}
                         target="_blank"
@@ -106,7 +108,7 @@ const ProjectCard = () => {
                       >
                         <img
                           src="/assets/icons/github-30.png"
-                          className="h-8 w-8
+                          className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5
                     inline bg-white rounded-full "
                           alt="github"
                         />{" "}
@@ -117,18 +119,18 @@ const ProjectCard = () => {
                         rel="noopener noreferrer"
                       >
                         <span
-                          className="bg-[#444444] hover:bg-[#232323] rounded-full text-xl "
+                          className="bg-[#444444] hover:bg-[#232323] rounded-full lg:text-xl md:text-[1rem] sm:text-[.7rem]"
                           style={{
                             padding: ".2rem .6rem",
                             border: ".1rem solid white",
                           }}
                         >
-                          <i className="ri-arrow-right-up-long-line text-2xl " />
+                          <i className="ri-arrow-right-up-long-line lg:text-2xl md:text-xl sm:text-[.8rem] " />
                         </span>
                       </a>
                     </div>
                   </div>
-                  <p className="text-[#bfbfbf] text-[1.1rem]">
+                  <p className="text-[#bfbfbf] lg-text-[1.1rem] md:text-[1rem] sm:text-[.75rem] text-wrap">
                     {project.description}
                   </p>
                 </div>
