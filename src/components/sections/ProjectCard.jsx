@@ -39,7 +39,7 @@ const ProjectCard = () => {
       description:
         "A frontend clone of the Uber ride booking interface built using React.js. It replicates key UI elements such as pickup/dropoff input fields, ride selection options, and estimated fare display. The project emphasizes clean design, intuitive layout, and real-time user interactions to simulate the Uber user experience.",
       imgURL: " /assets/images/uber.jpg",
-      live: "",
+      live: "https://github.com/Dp20703/Uber",
       github: "https://github.com/Dp20703/Uber",
     },
     {
@@ -73,7 +73,7 @@ const ProjectCard = () => {
                 className="lg:h-[38rem] lg:w-[28rem] sm:h-[30rem] sm:w-[17rem] md:h-[36rem] md:w-[22rem] overflow-hidden flex flex-col  gap-8 bg-[#232323]  rounded-xl "
                 style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
               >
-                <div className="h-1/2 w-full">
+                <div className="h-1/2 w-full ">
                   <div className="lg:h-54 lg:w-52  md:h-48 md:w-46 sm:h-32 sm:w-32 rounded-2xl overflow-hidden">
                     <GlareHover
                       height="100%"
@@ -88,8 +88,7 @@ const ProjectCard = () => {
                       <img
                         src={project.imgURL}
                         alt={project.title}
-                        className="object-cover  object-top-right"
-                        // style={{ border: ".1rem solid gray" }}
+                        className="object-cover h-full w-full object-center"
                       />
                     </GlareHover>
                   </div>
