@@ -39,7 +39,7 @@ const ProjectCard = () => {
       description:
         "A frontend clone of the Uber ride booking interface built using React.js. It replicates key UI elements such as pickup/dropoff input fields, ride selection options, and estimated fare display. The project emphasizes clean design, intuitive layout, and real-time user interactions to simulate the Uber user experience.",
       imgURL: " /assets/images/uber.jpg",
-      live: "",
+      live: "https://github.com/Dp20703/Uber",
       github: "https://github.com/Dp20703/Uber",
     },
     {
