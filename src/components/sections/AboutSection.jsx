@@ -4,10 +4,10 @@ import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedCon
 const AboutSection = () => {
   return (
     <div
-      className="h-screen w-full flex justify-center items-center"
+      className="h-screen sm:h-fit w-full flex lg:flex-row md:flex-row sm:flex-col gap-8 justify-center items-center"
       style={{ padding: "2rem 4rem" }}
     >
-      <div className="w-1/2">
+      <div className="lg:w-1/2 md:w-full sm:w-full">
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -20,7 +20,7 @@ const AboutSection = () => {
           threshold={0.3}
           delay={0.5}
         >
-          <div className="w-[35rem]">
+          <div className="lg:w-[35rem] md:w-100 sm:[w-25rem]">
             <PixelTransition
               firstContent={
                 <img
@@ -37,7 +37,7 @@ const AboutSection = () => {
           </div>
         </AnimatedContent>
       </div>
-      <div className="w-1/2">
+      <div className="lg:w-1/2 md:w-full sm:w-full">
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -55,18 +55,20 @@ const AboutSection = () => {
               padding: "2rem 2rem",
               border: ".1rem solid gray",
             }}
-            className=" h-[40rem] w-full rounded-xl"
+            className=" lg:h-[40rem] sm:h-fit md:h-[40rem] w-full rounded-xl overflow-auto"
           >
             <div className="w-full h-1/5">
-              <h2 className="text-[2rem] text-[#ffffff] font-bold">About</h2>
+              <h2 className="lg:text-[2rem] md:text-[1.5rem] sm:text-xl text-[#ffffff] font-bold">
+                About
+              </h2>
               <h3
-                className="text-xl text-[#444444] "
+                className="lg:text-xl md:text-[1rem] sm:text-[1rem] text-[#444444] "
                 style={{ margin: ".5rem 0" }}
               >
                 Get to Know Me
               </h3>
             </div>
-            <div className="w-full text-[#bfbfbf] text-[1.1rem]">
+            <div className="w-full text-[#bfbfbf] lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]">
               <p>
                 I'm Darshan Prajapati, a dedicated MERN stack developer with a
                 passion for crafting clean and functional web applications.

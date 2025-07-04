@@ -3,10 +3,10 @@ import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedCon
 const ContactSection = () => {
   return (
     <section
-      className="w-full h-fit flex items-cente justify-between"
+      className="w-full h-screen sm:h-fit flex lg:flex-row md:flex-col  sm:flex-col items-cente justify-between"
       style={{ padding: "6rem 2rem" }}
     >
-      <div className="w-1/2">
+      <div className="lg:w-1/2 md:w-full sm:w-full ">
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -19,18 +19,21 @@ const ContactSection = () => {
           threshold={0.3}
           delay={0.5}
         >
-          <div className="w-full">
+          <div
+            className="lg:w-full md:w-full sm:w-full flex flex-col justify-center items-left"
+            style={{ padding: "0 2rem" }}
+          >
             <div>
               <h2
-                className="text-3xl text-[#ffffff] font-bold"
-                style={{ padding: "0 2rem" }}
+                className="lg:text-3xl md:text-2xl sm:text-xl text-[#ffffff] font-bold"
+                style={{ padding: "0 2rem", textAlign: "start" }}
               >
                 Contact Us
               </h2>
             </div>
             <div
               style={{ padding: "2rem 2rem" }}
-              className="text-[1.1rem] w-4/5 flex flex-col gap-5 text-[#eaeaea] "
+              className="lg:lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] w-4/5 flex flex-col gap-5 text-[#eaeaea] "
             >
               <p>
                 We are available for questions, feedback, or collaboration
@@ -38,7 +41,7 @@ const ContactSection = () => {
               </p>
               <p>
                 You can also contact us at{" "}
-                <span className="text-[#ffffff]">codewithdp@gmail.com</span>
+                <span className="text-[#ffffff]">codewithdp2073@gmail.com</span>
               </p>
             </div>
             <div style={{ padding: "2rem 2rem" }}>
@@ -52,7 +55,10 @@ const ContactSection = () => {
         </AnimatedContent>
       </div>
 
-      <div className="w-1/2" style={{ padding: "0 4rem" }}>
+      <div
+        className="lg:w-1/2 md:w-full sm:w-full"
+        style={{ padding: "0 4rem" }}
+      >
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -68,15 +74,18 @@ const ContactSection = () => {
           <form
             action="https://formsubmit.co/codewithdp2073@gmail.com"
             method="POST"
-            className="w-full rounded-xl"
+            className="lg:w-full  md:w-full sm:w-full rounded-xl"
             style={{ border: ".1rem solid gray", padding: "2rem 2rem" }}
           >
             <div className="w-full" style={{ margin: ".5rem 0" }}>
-              <label htmlFor="name" className="text-white w-full text-[1.1rem]">
+              <label
+                htmlFor="name"
+                className="text-white w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]"
+              >
                 Name
               </label>
               <input
-                className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
+                className="w-full text-[#ffffff] bg-[#232323] rounded lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] placeholder:text-[#bfbfbf]"
                 style={{
                   padding: ".5rem .8rem",
                   margin: ".5rem 0",
@@ -91,12 +100,12 @@ const ContactSection = () => {
             <div className="w-full" style={{ margin: ".5rem 0" }}>
               <label
                 htmlFor="email"
-                className="text-white w-full text-[1.1rem]"
+                className="text-white w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]"
               >
                 Email
               </label>
               <input
-                className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
+                className="w-full text-[#ffffff] bg-[#232323] lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] placeholder:text-[#bfbfbf]"
                 style={{
                   padding: ".5rem .8rem",
                   margin: ".5rem 0",
@@ -111,13 +120,13 @@ const ContactSection = () => {
             <div className="w-full" style={{ margin: ".5rem 0" }}>
               <label
                 htmlFor="phoneno"
-                className="text-white w-full text-[1.1rem]"
+                className="text-white w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]"
               >
                 Phone number
               </label>
               <input
                 min={0}
-                className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
+                className="w-full text-[#ffffff] bg-[#232323] lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] placeholder:text-[#bfbfbf]"
                 style={{
                   padding: ".5rem .8rem",
                   margin: ".5rem 0",
@@ -132,12 +141,12 @@ const ContactSection = () => {
             <div className="w-full" style={{ margin: ".5rem 0" }}>
               <label
                 htmlFor="subject"
-                className="text-white w-full text-[1.1rem]"
+                className="text-white w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]"
               >
                 Subject
               </label>
               <input
-                className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
+                className="w-full text-[#ffffff] bg-[#232323] lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] placeholder:text-[#bfbfbf]"
                 style={{
                   padding: ".5rem .8rem",
                   margin: ".5rem 0",
@@ -152,14 +161,14 @@ const ContactSection = () => {
             <div className="w-full" style={{ margin: ".5rem 0" }}>
               <label
                 htmlFor="message"
-                className="text-white w-full text-[1.1rem]"
+                className="text-white w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]"
               >
                 Message
               </label>
               <textarea
                 name="message"
                 id="message"
-                className="w-full text-[#ffffff] bg-[#232323] rounded text-[1rem] placeholder:text-[#bfbfbf]"
+                className="w-full text-[#ffffff] bg-[#232323] rounded lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] placeholder:text-[#bfbfbf]"
                 style={{
                   padding: ".5rem .8rem",
                   margin: ".5rem 0",
@@ -172,7 +181,7 @@ const ContactSection = () => {
             <div className="w-full" style={{ margin: "1rem 0" }}>
               <button
                 type="submit"
-                className="w-full text-[#444444] bg-[#eaeaea] rounded text-[1.1rem] hover:bg-[#ffffff]"
+                className="w-full text-[#444444] bg-[#eaeaea] rounded lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] hover:bg-[#ffffff]"
                 style={{
                   padding: ".5rem .8rem",
                   margin: ".5rem 0",
