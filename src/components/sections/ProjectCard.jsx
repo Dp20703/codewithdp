@@ -70,7 +70,7 @@ const ProjectCard = () => {
             >
               <div
                 key={idx}
-                className="lg:h-[38rem] lg:w-[28rem] sm:h-[30rem] sm:w-[17rem] md:h-[36rem] md:w-[22rem] overflow-hidden flex flex-col  gap-8 bg-[#232323]  rounded-xl "
+                className="lg:h-[38rem] lg:w-[27rem] sm:h-[30rem] sm:w-[17rem] md:h-[36rem] md:w-[22rem] overflow-hidden flex flex-col  gap-8 bg-[#232323]  rounded-xl "
                 style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
               >
                 <div className="h-1/2 w-full ">
