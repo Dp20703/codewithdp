@@ -8,7 +8,7 @@ const HeroBasic = () => {
     <>
       <section
         className={`${
-          theme === "dark" ? "bg-[#232323]" : "bg-[#bfbfbf] "
+          theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea] "
         } h-screen w-full flex items-center justify-center`}
       >
         <div className="flex items-center flex-col justify-center gap-5 ">
