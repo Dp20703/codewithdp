@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
-
+import { useTheme } from "../../context/ThemeContext.jsx";
 const Footer = () => {
+  const { theme } = useTheme();
   return (
-    <section className="w-full" style={{ borderTop: ".1rem solid gray" }}>
+    <section
+      className={`w-full ${
+        theme === "dark" ? "bg-[#1e1e1e] " : "bg-[#ffffff]"
+      }`}
+      style={{ borderTop: ".1rem solid gray" }}
+    >
       <div
         className="flex justify-around gap-5"
         style={{ padding: "2rem 3rem" }}
@@ -10,23 +16,51 @@ const Footer = () => {
         <div>
           <ul className="flex flex-col gap-3 justify-center">
             <h2
-              className="text-[#ffffff] lg:text-[1.75rem] md:text-2xl sm:text-xl"
+              className={`lg:text-[1.75rem] md:text-2xl sm:text-xl  ${
+                theme === "dark"
+                  ? "text-[#e1e1e1] bg-transparent  hover:text-[#ffffff]"
+                  : "text-[#1e1e1e] bg-transparnt  hover:text-[#444444]"
+              }`}
               style={{ marginBottom: ".5rem" }}
             >
               Links
             </h2>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <Link to="/" className="active">
                 Home
               </Link>
             </li>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <Link to="/about">About</Link>
             </li>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <Link to="/projects">Projects</Link>
             </li>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -35,12 +69,22 @@ const Footer = () => {
         <div>
           <ul className="flex flex-col gap-3 justify-center">
             <h2
-              className="text-[#ffffff] lg:text-[1.75rem] md:text-2xl sm:text-xl"
+              className={`lg:text-[1.75rem] md:text-2xl sm:text-xl  ${
+                theme === "dark"
+                  ? "text-[#e1e1e1] bg-transparent  hover:text-[#ffffff]"
+                  : "text-[#1e1e1e] bg-transparnt  hover:text-[#444444]"
+              }`}
               style={{ marginBottom: ".5rem" }}
             >
               Socials
             </h2>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] text-2xl hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <img
                 src="/assets/icons/github-30.png"
                 className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline bg-white rounded-full "
@@ -54,11 +98,17 @@ const Footer = () => {
                 GitHub
               </a>
             </li>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <img
                 src="/assets/icons/linkedin-48.png"
                 style={{ padding: ".1rem" }}
-                className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline  bg-white rounded-full "
+                className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline bg-white rounded-full "
                 alt="linkedin"
               />{" "}
               <a
@@ -69,7 +119,13 @@ const Footer = () => {
                 Linkedin
               </a>
             </li>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <img
                 src="/assets/icons/x-50.png"
                 className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline  bg-white rounded-full"
@@ -84,7 +140,13 @@ const Footer = () => {
                 Twitter (X)
               </a>
             </li>
-            <li className="text-[#bbbbbb] lg:text-2xl md:text-xl sm:text-[.80rem] hover:text-[#ffffff]">
+            <li
+              className={`${
+                theme === "dark"
+                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                  : "text-[#444444] hover:text-[#232323]"
+              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+            >
               <img
                 src="/assets/icons/instagram-48.png"
                 className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline  bg-white rounded-full "
@@ -102,7 +164,9 @@ const Footer = () => {
         </div>
       </div>
       <h2
-        className="text-center lg:text-xl md:text-[1rem] sm:text-[.80rem]"
+        className={`${
+          theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
+        } text-center lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
         style={{ padding: "2rem 0" }}
       >
         Made with ❤️ in india

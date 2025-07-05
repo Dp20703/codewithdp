@@ -43,13 +43,13 @@
   border: 0.02rem solid transparent !important;
   transition: all 0.7s ease;
   white-space: nowrap;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .navbar-menu li a.active,
 .navbar-menu li a:hover {
-  background-color: var(--active-color);
-  color: var(--third-text-color);
+  /* background-color: var(--active-color);
+  color: var(--third-text-color); */
   border: 0.01rem solid gray !important;
 }
 
@@ -65,7 +65,7 @@
   height: 0.2rem;
   width: 2rem;
   margin: 0.5rem auto;
-  background-color: var(--text-color);
+  /* background-color: var(--text-color); */
   transition: all 0.3s ease-in-out;
 }
 

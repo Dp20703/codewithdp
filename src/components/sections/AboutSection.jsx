@@ -1,10 +1,14 @@
 import PixelTransition from "../../blocks/Animations/PixelTransition/PixelTransition";
 import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedContent";
+import { useTheme } from "../../context/ThemeContext.jsx";
 
 const AboutSection = () => {
+  const { theme } = useTheme();
   return (
-    <div
-      className="h-screen sm:h-fit w-full flex lg:flex-row md:flex-row sm:flex-col gap-8 justify-center items-center"
+    <section
+      className={`${
+        theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"
+      } h-screen sm:h-fit w-full flex lg:flex-row md:flex-row sm:flex-col gap-8 justify-center items-center`}
       style={{ padding: "2rem 4rem" }}
     >
       <div className="lg:w-1/2 md:w-full sm:w-full">
@@ -51,24 +55,36 @@ const AboutSection = () => {
           delay={0.5}
         >
           <div
+            className={`${
+              theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"
+            } lg:h-[40rem] sm:h-fit md:h-[40rem] w-full rounded-xl overflow-auto`}
             style={{
               padding: "2rem 2rem",
               border: ".1rem solid gray",
             }}
-            className=" lg:h-[40rem] sm:h-fit md:h-[40rem] w-full rounded-xl overflow-auto"
           >
             <div className="w-full h-1/5">
-              <h2 className="lg:text-[2rem] md:text-[1.5rem] sm:text-xl text-[#ffffff] font-bold">
+              <h2
+                className={`${
+                  theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
+                } lg:text-[2rem] md:text-[1.5rem] sm:text-xl font-bold`}
+              >
                 About
               </h2>
               <h3
-                className="lg:text-xl md:text-[1rem] sm:text-[1rem] text-[#444444] "
+                className={`${
+                  theme === "dark" ? "text-[#444444]" : "text-[#383838]"
+                } lg:text-xl md:text-[1rem] sm:text-[1rem]`}
                 style={{ margin: ".5rem 0" }}
               >
                 Get to Know Me
               </h3>
             </div>
-            <div className="w-full text-[#bfbfbf] lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]">
+            <div
+              className={`${
+                theme === "dark" ? "text-[#bfbfbf]" : "text-[#232323]"
+              } w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]`}
+            >
               <p>
                 I'm Darshan Prajapati, a dedicated MERN stack developer with a
                 passion for crafting clean and functional web applications.
@@ -92,7 +108,7 @@ const AboutSection = () => {
           </div>
         </AnimatedContent>
       </div>
-    </div>
+    </section>
   );
 };
 

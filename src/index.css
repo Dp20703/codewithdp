@@ -2,7 +2,6 @@
 :root {
   --primary-color: #1e1e1e;
   --secondary-color: #232323;
-  --third-color: #383838;
   --hover-color: #272832;
   --accent-color: #0071ff;
   --text-color: #ffffff;
@@ -23,4 +22,5 @@ body {
   width: 100%;
   background-color: var(--primary-color);
   color: var(--text-color);
+  scroll-behavior: auto;
 }
