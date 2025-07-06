@@ -8,7 +8,7 @@ const ProjectCard = () => {
       title: "StockTally",
       description:
         " StockTally is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) that allows users to track and manage their stock trades. Users can add buy/sell entries, close trades, and automatically calculate profits or losses.",
-      imgURL: " /assets/images/StockTally.png",
+      imgURL: " /assets/images/stocktally.png",
       live: "https://stock-tally.vercel.app",
       github: "https://github.com/Dp20703/StockTally",
     },

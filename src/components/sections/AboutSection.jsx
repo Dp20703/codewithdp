@@ -9,7 +9,7 @@ const AboutSection = () => {
       className={`${
         theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"
       } h-screen sm:h-fit w-full flex lg:flex-row md:flex-row sm:flex-col gap-8 justify-center items-center`}
-      style={{ padding: "2rem 4rem" }}
+      style={{ padding: "4rem 4rem" }}
     >
       <div className="lg:w-1/2 md:w-full sm:w-full">
         <AnimatedContent
