@@ -3,7 +3,7 @@ import { useTheme } from "../../context/ThemeContext.jsx";
 const Footer = () => {
   const { theme } = useTheme();
   return (
-    <section
+    <section id="footer-sec"
       className={`w-full ${
         theme === "dark" ? "bg-[#1e1e1e] " : "bg-[#ffffff]"
       }`}

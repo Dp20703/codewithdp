@@ -98,4 +98,10 @@
   #contact-form form button {
     font-size: 0.75rem;
   }
+
+  /* Footer.jsx */
+  #footer-sec ul li img {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
 }
