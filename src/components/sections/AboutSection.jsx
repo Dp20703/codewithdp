@@ -6,12 +6,17 @@ const AboutSection = () => {
   const { theme } = useTheme();
   return (
     <section
+      id="about-sec"
       className={`${
         theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"
-      } h-screen sm:h-fit w-full flex lg:flex-row md:flex-row sm:flex-col gap-8 justify-center items-center`}
+      } lg:h-screen md:h-screen sm:h-fit
+      flex lg:flex-row md:flex-row sm:flex-col gap-5 items-center`}
       style={{ padding: "4rem 4rem" }}
     >
-      <div className="lg:w-1/2 md:w-full sm:w-full">
+      <div
+        className="lg:w-1/2 md:w-1/2 sm:w-full h-full overflow-hidden"
+        id="about-pic"
+      >
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -24,13 +29,16 @@ const AboutSection = () => {
           threshold={0.3}
           delay={0.5}
         >
-          <div className="lg:w-[35rem] md:w-100 sm:[w-25rem]">
+          <div
+            id="img-compo"
+            className="lg:w-[32rem] md:w-full sm:w-full lg:h-[40rem] md:h-[40rem] sm:h-full rounded-xl"
+          >
             <PixelTransition
               firstContent={
                 <img
                   src="https://plus.unsplash.com/premium_photo-1746927715759-03f68bbd8c9a?q=80&w=744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="contact"
-                  className=" rounded-xl h-[40rem] w-full object-cover object-right"
+                  className="rounded-xl md:h-[40rem] h-full w-full object-cover md:object-center object-right "
                 />
               }
               gridSize={12}
@@ -41,7 +49,8 @@ const AboutSection = () => {
           </div>
         </AnimatedContent>
       </div>
-      <div className="lg:w-1/2 md:w-full sm:w-full">
+
+      <div id="about-text" className="lg:w-1/2 md:w-1/2 sm:w-full h-full">
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -57,7 +66,7 @@ const AboutSection = () => {
           <div
             className={`${
               theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"
-            } lg:h-[40rem] sm:h-fit md:h-[40rem] w-full rounded-xl overflow-auto`}
+            } lg:h-[40rem] md:h-[40rem] sm:h-full  lg:w-[40rem] md:w-full sm:w-full rounded-xl  `}
             style={{
               padding: "2rem 2rem",
               border: ".1rem solid gray",
@@ -83,7 +92,7 @@ const AboutSection = () => {
             <div
               className={`${
                 theme === "dark" ? "text-[#bfbfbf]" : "text-[#232323]"
-              } w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]`}
+              } w-full lg:text-[1.1rem] md:text-[.9rem] sm:text-[.75rem]`}
             >
               <p>
                 I'm Darshan Prajapati, a dedicated MERN stack developer with a

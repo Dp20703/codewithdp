@@ -57,7 +57,7 @@ const ProjectCard = () => {
     <>
       {projects.map((project, idx) => {
         return (
-          <>
+          <div key={idx}>
             <AnimatedContent
               distance={150}
               direction="vertical"
@@ -71,14 +71,15 @@ const ProjectCard = () => {
               delay={0.3}
             >
               <div
-                key={idx}
+                id="project-card"
                 className={`${
                   theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"
                 } lg:h-[38rem] lg:w-[27rem] sm:h-[30rem] sm:w-[17rem] md:h-[36rem] md:w-[22rem] overflow-hidden flex flex-col  gap-8   rounded-xl `}
                 style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
               >
-                <div className="h-1/2 w-full ">
+                <div id="img-sec" className="h-1/2 w-full ">
                   <div
+                    id="img-compo"
                     className="lg:h-54 lg:w-52  md:h-48 md:w-46 sm:h-32 sm:w-32 rounded-2xl overflow-hidden"
                     style={{ padding: ".2rem .2rem" }}
                   >
@@ -101,8 +102,14 @@ const ProjectCard = () => {
                   </div>
                 </div>
 
-                <div className="h-1/2 w-full flex flex-col gap-5 justify-center">
-                  <div className="flex justify-between items-center w-full flex-wrap">
+                <div
+                  id="text-sec"
+                  className="h-1/2 w-full flex flex-col gap-5 justify-center"
+                >
+                  <div
+                    id="project-title"
+                    className="flex justify-between items-center w-full flex-wrap"
+                  >
                     <h2
                       className={`${
                         theme === "dark" ? "text-[#eaeaea]" : "text-[#232323]"
@@ -146,6 +153,7 @@ const ProjectCard = () => {
                     </div>
                   </div>
                   <p
+                    id="project-desc"
                     className={`${
                       theme === "dark" ? "text-[#bfbfbf] " : "text-[#232323]"
                     } lg-text-[1.1rem] md:text-[1rem] sm:text-[.75rem] text-wrap`}
@@ -155,7 +163,7 @@ const ProjectCard = () => {
                 </div>
               </div>
             </AnimatedContent>
-          </>
+          </div>
         );
       })}
     </>

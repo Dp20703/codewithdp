@@ -6,12 +6,16 @@ const ContactSection = () => {
 
   return (
     <section
-      className={`w-full h-screen sm:h-fit flex lg:flex-row md:flex-col  sm:flex-col items-cente justify-between ${
-        theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"
-      }`}
-      style={{ padding: "6rem 2rem" }}
+      id="contact-sec"
+      className={`w-full lg:h-screen md:h-fit sm:h-fit
+         flex lg:flex-row md:flex-col sm:flex-col justify-between items-center gap-5
+         ${theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"}`}
+      style={{ padding: "4rem 4rem" }}
     >
-      <div className="lg:w-1/2 md:w-full sm:w-full ">
+      <div
+        id="contact-text"
+        className="lg:w-1/2 md:w-full sm:w-full lg:h-[45rem] md:h-full sm:h-full"
+      >
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -25,10 +29,10 @@ const ContactSection = () => {
           delay={0.5}
         >
           <div
-            className="lg:w-full md:w-full sm:w-full flex flex-col justify-center items-left"
-            style={{ padding: "0 2rem" }}
+            className="w-full h-full flex flex-col items-left rounded-xl"
+            style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
           >
-            <div>
+            <div className="w-full">
               <h2
                 className={`${
                   theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
@@ -38,11 +42,12 @@ const ContactSection = () => {
                 Contact Us
               </h2>
             </div>
+
             <div
               style={{ padding: "2rem 2rem" }}
               className={`${
                 theme === "dark" ? "text-[#eaeaea]" : "text-[#383838]"
-              } text-start lg:lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] w-4/5 flex flex-col gap-5`}
+              } text-start lg:lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] lg:w-4/5 flex flex-col gap-5`}
             >
               <p>
                 We are available for questions, feedback, or collaboration
@@ -59,11 +64,12 @@ const ContactSection = () => {
                 </span>
               </p>
             </div>
+
             <div style={{ padding: "2rem 2rem" }}>
               <img
                 src="/assets/images/contact2.jpg"
                 alt="contact"
-                className="h-76 w-2/3 rounded-xl  object-contain object-left-top"
+                className="h-76 w-2/3 rounded-xl  object-cover object-right"
               />
             </div>
           </div>
@@ -71,8 +77,8 @@ const ContactSection = () => {
       </div>
 
       <div
-        className="lg:w-1/2 md:w-full sm:w-full"
-        style={{ padding: "0 4rem" }}
+        id="contact-form"
+        className="lg:w-1/3 md:w-full sm:w-full lg:h-[45rem]"
       >
         <AnimatedContent
           distance={150}
