@@ -250,7 +250,7 @@ const ContactSection = () => {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:5173/contact"
+              value="codewithdp.vercel.app/contact"
             />
           </form>
         </AnimatedContent>
