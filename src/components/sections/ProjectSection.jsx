@@ -1,5 +1,5 @@
 import { useTheme } from "../../context/ThemeContext.jsx";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../cards/ProjectCard.jsx";
 
 const ProjectSection = () => {
   const { theme } = useTheme();
