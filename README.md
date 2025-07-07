@@ -105,8 +105,8 @@ npm install @reactbits/animation
 
 ## 📬 Contact
 
-- ✉️ Email: codewithdp@gmail.com
-- 🔗 GitHub: [@codewithdp20703](https://github.com/codewithdp20703)
+- ✉️ Email: codewithdp2073@gmail.com
+- 🔗 GitHub: [@dp20703](https://github.com/dp20703)
 - 💼 LinkedIn: [linkedin.com/in/darshan-prajapati-523202282](https://linkedin.com/in/darshan-prajapati-523202282)
 
 ---
