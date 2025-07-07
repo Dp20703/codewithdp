@@ -1,6 +1,6 @@
-import GlareHover from "../../blocks/Animations/GlareHover/GlareHover";
-import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedContent";
-import { useTheme } from "../../context/ThemeContext.jsx";
+import GlareHover from "../../blocks/Animations/GlareHover/GlareHover.jsx";
+import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedContent.jsx";
+import { useTheme } from "../../context/ThemeContext.jsx.jsx";
 const ProjectCard = () => {
   const { theme } = useTheme();
   const projects = [
