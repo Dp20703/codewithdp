@@ -125,8 +125,6 @@ function PixelTransition({
       onMouseLeave={!isTouchDevice ? handleMouseLeave : undefined}
       onClick={isTouchDevice ? handleClick : undefined}
     >
-      {/* <div style={{ paddingTop: aspectRatio }} /> */}
-
       <div className="">{firstContent}</div>
 
       <div ref={activeRef} className="" style={{ display: "none" }}>

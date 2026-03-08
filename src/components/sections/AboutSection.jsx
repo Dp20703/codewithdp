@@ -72,22 +72,37 @@ const AboutSection = () => {
               border: ".1rem solid gray",
             }}
           >
-            <div className="w-full h-1/5">
-              <h2
+            <div className="w-full h-1/5 flex justify-around gap-12">
+              <div>
+                <h2
+                  className={`${
+                    theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
+                  } lg:text-[2rem] md:text-[1.5rem] sm:text-xl font-bold`}
+                >
+                  About
+                </h2>
+                <h3
+                  className={`${
+                    theme === "dark" ? "text-[#444444]" : "text-[#383838]"
+                  } lg:text-xl md:text-[1rem] sm:text-[1rem]`}
+                  style={{ margin: ".5rem 0" }}
+                >
+                  Get to Know Me
+                </h3>
+              </div>
+              <a
+                href="/resume.pdf"
+                download="Darshan_Prajapati_Resume.pdf"
                 className={`${
-                  theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
-                } lg:text-[2rem] md:text-[1.5rem] sm:text-xl font-bold`}
+                  theme === "dark"
+                    ? "text-[#ffffff] bg-[#1e1e1e]"
+                    : "bg-[#1e1e1e] text-[#ffff]"
+                }
+                   explore-btn
+                inline-block  px-6 py-3 rounded-xl shadow-md hover:scale-105 transition h-fit border-gray-400 border-1`}
               >
-                About
-              </h2>
-              <h3
-                className={`${
-                  theme === "dark" ? "text-[#444444]" : "text-[#383838]"
-                } lg:text-xl md:text-[1rem] sm:text-[1rem]`}
-                style={{ margin: ".5rem 0" }}
-              >
-                Get to Know Me
-              </h3>
+                ⬇ Download CV
+              </a>
             </div>
             <div
               className={`${

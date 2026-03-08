@@ -91,6 +91,19 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <a
+                href="/assets/resume.pdf"
+                download="Darshan_Prajapati_Resume.pdf"
+                className={`${location.pathname === "/resume" && "active"}  ${
+                  theme === "dark"
+                    ? "text-[#ffffff] bg-transprent  hover:bg-[#444444] hover:text-[#eaeaea]"
+                    : "text-[#1e1e1e] bg-transprent hover:bg-[#eaeaea] hover:text-[#232323]"
+                }`}
+              >
+                Resume
+              </a>
+            </li>
+            <li>
               <button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >

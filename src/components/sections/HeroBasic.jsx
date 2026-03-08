@@ -42,19 +42,33 @@ const HeroBasic = () => {
             scalable, and user-friendly digital experiences using the MERN
             stack.
           </p>
-          <Link
-            id="explore-btn"
-            style={{ padding: "1rem 1rem" }}
-            className={` lg:text-xl md:text-[1rem] sm:text-xs rounded-xl 
+          <div className="py-3 w-1/2 flex flex-col lg:flex-row md:flex-row justify-evenly items-center gap-5">
+            <Link
+              style={{ padding: "1rem 1rem" }}
+              className={`explore-btn inline-block px-6 py-3 shadow-md hover:scale-105 transition 
+              lg:text-xl md:text-[1rem] sm:text-xs rounded-xl
             ${
               theme === "dark"
                 ? "bg-[#ffffff] text-[#232323] hover:bg-[#444444] hover:text-[#ffffff]"
                 : "text-[#ffffff] bg-[#232323] hover:text-[#444444] hover:bg-[#ffffff]"
             }  `}
-            to={"/projects"}
-          >
-            Explore My Projects
-          </Link>
+              to={"/projects"}
+            >
+              Explore My Projects
+            </Link>
+            <a
+              href="/assets/resume.pdf"
+              download="Darshan_Prajapati_Resume.pdf"
+              style={{ padding: "1rem 1rem" }}
+              className={`explore-btn inline-block px-6 py-3 rounded-xl shadow-md hover:scale-105 transition ${
+                theme === "dark"
+                  ? "bg-[#ffffff] text-[#232323] hover:bg-[#444444] hover:text-[#ffffff]"
+                  : "text-[#ffffff] bg-[#232323] hover:text-[#444444] hover:bg-[#ffffff]"
+              }  `}
+            >
+              ⬇ Download Resume
+            </a>
+          </div>
         </div>
       </section>
     </>
