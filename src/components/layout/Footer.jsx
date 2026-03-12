@@ -1,93 +1,102 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext.jsx";
+
 const Footer = () => {
   const { theme } = useTheme();
+
   return (
-    <section id="footer-sec"
-      className={`w-full ${
-        theme === "dark" ? "bg-[#1e1e1e] " : "bg-[#ffffff]"
-      }`}
-      style={{ borderTop: ".1rem solid gray" }}
+    <footer
+      className={`${theme === "dark" ? "bg-[#1e1e1e] " : "bg-[#ffffff]"} border-t border-gray-500`}
     >
-      <div
-        className="flex justify-around gap-5"
-        style={{ padding: "2rem 3rem" }}
-      >
-        <div>
-          <ul className="flex flex-col gap-3 justify-center">
-            <h2
-              className={`lg:text-[1.75rem] md:text-2xl sm:text-xl  ${
+      <section className="flex justify-around gap-5 py-6 px-6">
+        <nav>
+          <ul className="flex flex-col gap-3 sm:gap-1 justify-center">
+            <li
+              className={`lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1rem] ${
                 theme === "dark"
-                  ? "text-[#e1e1e1] bg-transparent  hover:text-[#ffffff]"
-                  : "text-[#1e1e1e] bg-transparnt  hover:text-[#444444]"
+                  ? "text-[#e1e1e1] bg-transparent hover:text-[#ffffff]"
+                  : "text-[#1e1e1e] bg-transparnt hover:text-[#444444]"
               }`}
-              style={{ marginBottom: ".5rem" }}
             >
               Links
-            </h2>
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
-            >
-              <Link to="/" className="active">
+            </li>
+
+            <li>
+              <Link
+                to="/"
+                className={`${
+                  theme === "dark"
+                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                    : "text-[#444444] hover:text-[#232323]"
+                } lg:text-xl md:text-[1rem] sm:text-[.80rem] active`}
+              >
                 Home
               </Link>
             </li>
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
-            >
-              <Link to="/about">About</Link>
+
+            <li>
+              <Link
+                to="/about"
+                className={`${
+                  theme === "dark"
+                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                    : "text-[#444444] hover:text-[#232323]"
+                } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
+              >
+                About
+              </Link>
             </li>
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
-            >
-              <Link to="/projects">Projects</Link>
+
+            <li>
+              <Link
+                to="/projects"
+                className={`${
+                  theme === "dark"
+                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                    : "text-[#444444] hover:text-[#232323]"
+                } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
+              >
+                Projects
+              </Link>
             </li>
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
-            >
-              <Link to="/contact">Contact</Link>
+
+            <li>
+              <Link
+                to="/contact"
+                className={`${
+                  theme === "dark"
+                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
+                    : "text-[#444444] hover:text-[#232323]"
+                } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
-        </div>
+        </nav>
 
-        <div>
-          <ul className="flex flex-col gap-3 justify-center">
-            <h2
-              className={`lg:text-[1.75rem] md:text-2xl sm:text-xl  ${
+        <section>
+          <ul className="flex flex-col gap-3 sm:gap-2 justify-center">
+            <li
+              className={`lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1rem] ${
                 theme === "dark"
-                  ? "text-[#e1e1e1] bg-transparent  hover:text-[#ffffff]"
-                  : "text-[#1e1e1e] bg-transparnt  hover:text-[#444444]"
+                  ? "text-[#e1e1e1] bg-transparent hover:text-[#ffffff]"
+                  : "text-[#1e1e1e] bg-transparnt hover:text-[#444444]"
               }`}
-              style={{ marginBottom: ".5rem" }}
             >
               Socials
-            </h2>
+            </li>
+
             <li
               className={`${
                 theme === "dark"
                   ? "text-[#bbbbbb] hover:text-[#ffffff]"
                   : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+              } lg:text-xl md:text-[1rem] sm:text-[.80rem] `}
             >
               <img
                 src="/assets/icons/github-30.png"
-                className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline bg-white rounded-full "
+                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
                 alt="github"
               />{" "}
               <a
@@ -98,17 +107,18 @@ const Footer = () => {
                 GitHub
               </a>
             </li>
+
             <li
               className={`${
                 theme === "dark"
                   ? "text-[#bbbbbb] hover:text-[#ffffff]"
                   : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+              } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
             >
               <img
                 src="/assets/icons/linkedin-48.png"
                 style={{ padding: ".1rem" }}
-                className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline bg-white rounded-full "
+                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
                 alt="linkedin"
               />{" "}
               <a
@@ -119,18 +129,18 @@ const Footer = () => {
                 Linkedin
               </a>
             </li>
+
             <li
               className={`${
                 theme === "dark"
                   ? "text-[#bbbbbb] hover:text-[#ffffff]"
                   : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+              } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
             >
               <img
                 src="/assets/icons/x-50.png"
-                className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline  bg-white rounded-full"
-                style={{ padding: ".1rem" }}
-                alt="twiiter"
+                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full p-[.1rem]"
+                alt="twitter"
               />{" "}
               <a
                 href="https://www.twitter.com/darshanrp2073"
@@ -140,16 +150,17 @@ const Footer = () => {
                 Twitter (X)
               </a>
             </li>
+
             <li
               className={`${
                 theme === "dark"
                   ? "text-[#bbbbbb] hover:text-[#ffffff]"
                   : "text-[#444444] hover:text-[#232323]"
-              } lg:text-2xl md:text-xl sm:text-[.80rem] `}
+              } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
             >
               <img
                 src="/assets/icons/instagram-48.png"
-                className="lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5 inline  bg-white rounded-full "
+                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
                 alt="instagram"
               />{" "}
               <a
@@ -161,17 +172,17 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </section>
+      </section>
+
       <h2
         className={`${
           theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
-        } text-center lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
-        style={{ padding: "2rem 0" }}
+        } text-center lg:text-[1rem] md:text-[.8rem] sm:text-[.6rem] pb-6`}
       >
-        Made with ❤️ in india
+        Made with ❤️ in India
       </h2>
-    </section>
+    </footer>
   );
 };
 

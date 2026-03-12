@@ -100,8 +100,8 @@
   }
 
   /* Footer.jsx */
-  #footer-sec ul li img {
-    height: 1.25rem;
-    width: 1.25rem;
+  section ul li img {
+    height: 1rem;
+    width: 1rem;
   }
 }
