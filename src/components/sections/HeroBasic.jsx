@@ -18,7 +18,7 @@ const HeroBasic = () => {
             id="title"
             className="flex lg:flex-row md:flex-col sm:flex-col items-center gap-3 justify-center"
           >
-            <h2 className=" lg:text-6xl md:text-4xl sm:text-2xl text-[#4e4e4e] text-center">
+            <h2 className=" lg:text-4xl md:text-3xl sm:text-xl text-[#4e4e4e] text-center">
               Welcome to
             </h2>
             <BlurText
@@ -29,12 +29,13 @@ const HeroBasic = () => {
               direction="top"
               className={`${
                 theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
-              } lg:text-7xl md:text-5xl sm:text-3xl text-center inline-block title-text`}
+              } lg:text-5xl md:text-4xl sm:text-2xl text-center inline-block title-text`}
             />
           </div>
+
           <p
             id="hero-text"
-            className={` lg:text-2xl md:text-xl sm:text-sm ${
+            className={` lg:text-xl md:text-sm sm:text-xs ${
               theme === "dark" ? "text-[#bfbfbf]" : "text-[#444444]"
             }  text-center w-1/2 `}
           >
@@ -42,11 +43,11 @@ const HeroBasic = () => {
             scalable, and user-friendly digital experiences using the MERN
             stack.
           </p>
-          <div className="py-3 w-1/2 flex flex-col lg:flex-row md:flex-row justify-evenly items-center gap-5">
+
+          <div className="mt-8 flex flex-row justify-evenly items-center gap-5 w-fit px-8">
             <Link
-              style={{ padding: "1rem 1rem" }}
-              className={`explore-btn inline-block px-6 py-3 shadow-md hover:scale-105 transition 
-              lg:text-xl md:text-[1rem] sm:text-xs rounded-xl
+              className={`explore-btn inline-block px-4 py-3 shadow-md hover:scale-105 transition 
+              lg:text-xl md:text-sm sm:text-xs rounded-xl
             ${
               theme === "dark"
                 ? "bg-[#ffffff] text-[#232323] hover:bg-[#444444] hover:text-[#ffffff]"
@@ -59,14 +60,13 @@ const HeroBasic = () => {
             <a
               href="/assets/resume.pdf"
               download="Darshan_Prajapati_Resume.pdf"
-              style={{ padding: "1rem 1rem" }}
-              className={`explore-btn inline-block px-6 py-3 rounded-xl shadow-md hover:scale-105 transition ${
+              className={`explore-btn inline-block px-4 py-3 rounded-xl shadow-md hover:scale-105 transition  lg:text-xl md:text-sm sm:text-xs ${
                 theme === "dark"
                   ? "bg-[#ffffff] text-[#232323] hover:bg-[#444444] hover:text-[#ffffff]"
                   : "text-[#ffffff] bg-[#232323] hover:text-[#444444] hover:bg-[#ffffff]"
               }  `}
             >
-              ⬇ Download Resume
+              Download Resume
             </a>
           </div>
         </div>

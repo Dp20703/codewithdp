@@ -1,10 +1,10 @@
 /* navbar style */
 
 .navbar {
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
   top: 0;
   z-index: 999;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -22,7 +22,7 @@
 
 .navbar-logo {
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -31,14 +31,13 @@
   display: flex;
   align-items: center;
   gap: 1.5rem !important;
-  font-size: 1.2rem;
   list-style: none;
 }
 
 .navbar-menu li a {
   text-decoration: none;
   padding: 0.5rem 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 0.5rem;
   border: 0.02rem solid transparent !important;
   transition: all 0.7s ease;
@@ -48,8 +47,6 @@
 
 .navbar-menu li a.active,
 .navbar-menu li a:hover {
-  /* background-color: var(--active-color);
-  color: var(--third-text-color); */
   border: 0.01rem solid gray !important;
 }
 
@@ -65,7 +62,6 @@
   height: 0.2rem;
   width: 2rem;
   margin: 0.5rem auto;
-  /* background-color: var(--text-color); */
   transition: all 0.3s ease-in-out;
 }
 

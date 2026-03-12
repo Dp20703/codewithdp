@@ -8,14 +8,14 @@ import AboutSection from "../components/sections/AboutSection";
 const Home = () => {
   document.title = "Home | codewithdp";
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <HeroBasic />
       <ProjectSection />
       <AboutSection />
       <ContactSection />
       <Footer />
-    </>
+    </div>
   );
 };
 
