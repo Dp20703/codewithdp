@@ -7,15 +7,13 @@ const AboutSection = () => {
   return (
     <section
       id="about-sec"
-      className={`${
-        theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"
-      } lg:h-screen md:h-screen sm:h-fit
-      flex lg:flex-row md:flex-row sm:flex-col gap-5 items-center`}
-      style={{ padding: "4rem 4rem" }}
+      className={`${theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"} 
+      sm:h-fit flex lg:flex-row md:flex-row sm:flex-col
+      gap-14 px-[8%] py-10`}
     >
       <div
-        className="lg:w-1/2 md:w-1/2 sm:w-full h-full overflow-hidden"
         id="about-pic"
+        className="w-[40%] sm:w-full rounded-xl  border border-gray-500 overflow-hidden"
       >
         <AnimatedContent
           distance={150}
@@ -29,20 +27,17 @@ const AboutSection = () => {
           threshold={0.3}
           delay={0.5}
         >
-          <div
-            id="img-compo"
-            className="lg:w-[32rem] md:w-full sm:w-full lg:h-[40rem] md:h-[40rem] sm:h-full rounded-xl"
-          >
+          <div>
             <PixelTransition
               firstContent={
                 <img
                   src="https://plus.unsplash.com/premium_photo-1746927715759-03f68bbd8c9a?q=80&w=744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="contact"
-                  className="rounded-xl md:h-[40rem] h-full w-full object-cover md:object-center object-right "
+                  className="lg:min-h-screen object-cover md:object-center sm:object-right "
                 />
               }
               gridSize={12}
-              pixelColor="#ffffff"
+              pixelColor="#D3DAD9"
               animationStepDuration={0.4}
               className="custom-pixel-card"
             />
@@ -50,7 +45,12 @@ const AboutSection = () => {
         </AnimatedContent>
       </div>
 
-      <div id="about-text" className="lg:w-1/2 md:w-1/2 sm:w-full h-full">
+      <div
+        id="about-text"
+        className={`${theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"}
+           lg:min-h-screen md:h-[40rem] sm:h-fit w-[60%] sm:w-full border border-gray-500 rounded-xl py-12 px-10 
+             `}
+      >
         <AnimatedContent
           distance={150}
           direction="horizontal"
@@ -63,16 +63,8 @@ const AboutSection = () => {
           threshold={0.2}
           delay={0.5}
         >
-          <div
-            className={`${
-              theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"
-            } lg:h-[40rem] md:h-[40rem] sm:h-full  lg:w-[40rem] md:w-full sm:w-full rounded-xl  `}
-            style={{
-              padding: "2rem 2rem",
-              border: ".1rem solid gray",
-            }}
-          >
-            <div className="w-full h-1/5 flex justify-around gap-12">
+          <div className="flex flex-col gap-14">
+            <div className="w-full flex justify-around">
               <div>
                 <h2
                   className={`${
@@ -81,15 +73,16 @@ const AboutSection = () => {
                 >
                   About
                 </h2>
+
                 <h3
                   className={`${
                     theme === "dark" ? "text-[#444444]" : "text-[#383838]"
                   } lg:text-xl md:text-[1rem] sm:text-[1rem]`}
-                  style={{ margin: ".5rem 0" }}
                 >
                   Get to Know Me
                 </h3>
               </div>
+
               <a
                 href="/resume.pdf"
                 download="Darshan_Prajapati_Resume.pdf"
@@ -104,10 +97,9 @@ const AboutSection = () => {
                 ⬇ Download CV
               </a>
             </div>
+
             <div
-              className={`${
-                theme === "dark" ? "text-[#bfbfbf]" : "text-[#232323]"
-              } w-full lg:text-[1.1rem] md:text-[.9rem] sm:text-[.75rem]`}
+              className={`${theme === "dark" ? "text-[#bfbfbf]" : "text-[#232323]"} w-full lg:text-[1.1rem] md:text-[.9rem] sm:text-[.75rem]`}
             >
               <p>
                 I'm Darshan Prajapati, a dedicated MERN stack developer with a

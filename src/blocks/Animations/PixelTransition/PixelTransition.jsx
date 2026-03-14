@@ -113,9 +113,6 @@ function PixelTransition({
         ${className}
         bg-[#271E37]
         text-white
-        rounded-[15px]
-        border-2
-        border-white
         max-w-full
         relative
         overflow-hidden

@@ -42,7 +42,6 @@
   border: 0.02rem solid transparent !important;
   transition: all 0.7s ease;
   white-space: nowrap;
-  /* color: var(--text-color); */
 }
 
 .navbar-menu li a.active,
@@ -121,21 +120,23 @@
     padding: 0.8rem 1rem;
   }
   .navbar-logo {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .navbar-menu {
-    width: min(15rem, 100%);
+    width: min(10rem, 100%);
   }
   .navbar-menu li {
     width: 100%;
     padding: 0.25rem 1rem;
   }
   .navbar-menu li a {
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+  .navbar-toggle {
+    width: min(10rem, 100%);
   }
   .navbar-toggle .bar {
     height: 0.2rem;
     width: 1.5rem;
-    margin-right: 4rem;
   }
 }
