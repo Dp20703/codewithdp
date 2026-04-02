@@ -117,8 +117,7 @@ const Footer = () => {
             >
               <img
                 src="/assets/icons/linkedin-48.png"
-                style={{ padding: ".1rem" }}
-                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
+                className="p-[.1rem] lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
                 alt="linkedin"
               />{" "}
               <a

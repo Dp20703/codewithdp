@@ -110,26 +110,11 @@ const Navbar = () => {
                 {theme == "light" ? (
                   <i
                     className="ri-sun-fill 
-                      text-[#1e1e1e] bg-transprent hover:bg-[#eaeaea]"
-                    style={{
-                      padding: " 0.5rem 0.5rem",
-                      border: ".1rem solid gray",
-                      borderRadius: ".5rem",
-                      fontSize: "1.5rem",
-                      transition: "all 0.7s ease-out",
-                    }}
+                      text-[#1e1e1e] bg-transprent hover:bg-[#eaeaea]
+                      p-[0.5rem] border border-gray-500 rounded-[0.5rem] text-[1.5rem] transition-all duration-[700ms] ease-out"
                   />
                 ) : (
-                  <i
-                    className="ri-moon-fill text-[#ffffff] bg-transprent  hover:bg-[#444444]"
-                    style={{
-                      padding: " 0.5rem 0.5rem",
-                      border: ".1rem solid gray",
-                      borderRadius: ".5rem",
-                      fontSize: "1.5rem",
-                      transition: "all 0.7s ease-out",
-                    }}
-                  />
+                  <i className="ri-moon-fill text-[#ffffff] bg-transprent  hover:bg-[#444444] p-[0.5rem] border-[1.6px] border-gray-500 rounded-[0.5rem] text-[1.5rem] transition-all duration-[700ms] ease-out" />
                 )}
               </button>
             </li>

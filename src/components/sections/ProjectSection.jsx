@@ -7,14 +7,10 @@ const ProjectSection = () => {
     <section
       className={`${
         theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"
-      } h-fit w-full`}
-      style={{ padding: "2rem 4rem 6rem 4rem" }}
+      } h-fit w-full pt-[2rem] pr-[4rem] pb-[6rem] pl-[4rem]`}
     >
       <div className="flex flex-col items-center justify-center gap-8">
-        <div
-          className="w-full flex flex-col gap-2"
-          style={{ padding: "0 1rem" }}
-        >
+        <div className="w-full flex flex-col gap-2 px-[1rem]">
           <h2
             className={`${
               theme === "dark" ? "text-[#eaeaea]" : "text-[#232323]"

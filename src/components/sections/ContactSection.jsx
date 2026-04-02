@@ -8,9 +8,8 @@ const ContactSection = () => {
     <section
       id="contact-sec"
       className={`w-full lg:h-screen md:h-fit sm:h-fit
-         flex lg:flex-row md:flex-col sm:flex-col justify-between items-center gap-5
+         flex lg:flex-row md:flex-col sm:flex-col justify-between items-center gap-5 p-[4rem]
          ${theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"}`}
-      style={{ padding: "4rem 4rem" }}
     >
       <div
         id="contact-text"
@@ -28,26 +27,21 @@ const ContactSection = () => {
           threshold={0.3}
           delay={0.5}
         >
-          <div
-            className="w-full h-full flex flex-col items-left rounded-xl"
-            style={{ padding: "2rem 2rem", border: ".1rem solid gray" }}
-          >
+          <div className="w-full h-full flex flex-col items-left rounded-xl px-8 py-8">
             <div className="w-full">
               <h2
                 className={`${
                   theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
-                } lg:text-3xl md:text-2xl sm:text-xl font-bold`}
-                style={{ padding: "0 2rem", textAlign: "start" }}
+                } lg:text-[2rem] md:text-[1.5rem] sm:text-xl font-bold text-left py-0 px-[2rem]`}
               >
                 Contact Us
               </h2>
             </div>
 
             <div
-              style={{ padding: "2rem 2rem" }}
               className={`${
                 theme === "dark" ? "text-[#eaeaea]" : "text-[#383838]"
-              } text-start lg:lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] lg:w-4/5 flex flex-col gap-5`}
+              } px-[2rem] py-[2rem] text-start lg:lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] lg:w-4/5 flex flex-col gap-5`}
             >
               <p>
                 We are available for questions, feedback, or collaboration
@@ -65,7 +59,7 @@ const ContactSection = () => {
               </p>
             </div>
 
-            <div style={{ padding: "2rem 2rem" }}>
+            <div className="py-[2rem] px-[2rem]">
               <img
                 src="/assets/images/contact2.jpg"
                 alt="contact"
@@ -97,10 +91,9 @@ const ContactSection = () => {
             method="POST"
             className={`${
               theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"
-            } lg:w-full  md:w-full sm:w-full rounded-xl`}
-            style={{ border: ".1rem solid gray", padding: "2rem 2rem" }}
+            } lg:w-full  md:w-full sm:w-full rounded-xl border border-gray-500 p-[2rem]`}
           >
-            <div className="w-full" style={{ margin: ".5rem 0" }}>
+            <div className="w-full my-[.5rem]">
               <label
                 htmlFor="name"
                 className={`${
@@ -114,19 +107,14 @@ const ContactSection = () => {
                   theme === "dark"
                     ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
                     : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded`}
-                style={{
-                  padding: ".5rem .8rem",
-                  margin: ".5rem 0",
-                  border: ".1rem solid gray",
-                }}
+                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
                 type="text"
                 name="name"
                 id="name"
                 placeholder="Your Name"
               />
             </div>
-            <div className="w-full" style={{ margin: ".5rem 0" }}>
+            <div className="w-full my-[.5rem]">
               <label
                 htmlFor="email"
                 className={`${
@@ -140,19 +128,14 @@ const ContactSection = () => {
                   theme === "dark"
                     ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
                     : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded`}
-                style={{
-                  padding: ".5rem .8rem",
-                  margin: ".5rem 0",
-                  border: ".1rem solid gray",
-                }}
+                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Email"
               />
             </div>
-            <div className="w-full" style={{ margin: ".5rem 0" }}>
+            <div className="w-full my-[.5rem]">
               <label
                 htmlFor="phoneno"
                 className={`${
@@ -167,19 +150,14 @@ const ContactSection = () => {
                   theme === "dark"
                     ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
                     : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded`}
-                style={{
-                  padding: ".5rem .8rem",
-                  margin: ".5rem 0",
-                  border: ".1rem solid gray",
-                }}
+                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
                 type="number"
                 name="phoneno"
                 id="phoneno"
                 placeholder="Enter phone number"
               />
             </div>
-            <div className="w-full" style={{ margin: ".5rem 0" }}>
+            <div className="w-full my-[.5rem]">
               <label
                 htmlFor="subject"
                 className={`${
@@ -193,19 +171,14 @@ const ContactSection = () => {
                   theme === "dark"
                     ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
                     : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded`}
-                style={{
-                  padding: ".5rem .8rem",
-                  margin: ".5rem 0",
-                  border: ".1rem solid gray",
-                }}
+                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
                 type="text"
                 name="subject"
                 id="subject"
                 placeholder="Subject"
               />
             </div>
-            <div className="w-full" style={{ margin: ".5rem 0" }}>
+            <div className="w-full my-[.5rem]">
               <label
                 htmlFor="message"
                 className={`${
@@ -221,28 +194,19 @@ const ContactSection = () => {
                   theme === "dark"
                     ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
                     : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded`}
-                style={{
-                  padding: ".5rem .8rem",
-                  margin: ".5rem 0",
-                  border: ".1rem solid gray",
-                }}
+                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
                 placeholder="Type your message here."
                 cols={2}
               />
             </div>
-            <div className="w-full" style={{ margin: "1rem 0" }}>
+            <div className="w-full">
               <button
                 type="submit"
                 className={`${
                   theme === "dark"
                     ? "text-[#444444] bg-[#eaeaea]  hover:bg-[#ffffff]"
                     : "text-[#eaeaea] bg-[#444444]  hover:bg-[#1e1e1e]"
-                } w-full rounded lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] `}
-                style={{
-                  padding: ".5rem .8rem",
-                  margin: ".5rem 0",
-                }}
+                } w-full rounded lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem] py-[0.5rem] px-[0.8rem] my-[0.5rem]`}
               >
                 Send Message
               </button>
