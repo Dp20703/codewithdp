@@ -1,7 +1,10 @@
 import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedContent";
 import { useTheme } from "../../context/ThemeContext.jsx";
+import InputField from "../formCompo/InputField.jsx";
+import LabelField from "../formCompo/LabelField.jsx";
 
 const ContactSection = () => {
+  
   const { theme } = useTheme();
 
   return (
@@ -94,99 +97,49 @@ const ContactSection = () => {
             } lg:w-full  md:w-full sm:w-full rounded-xl border border-gray-500 p-[2rem]`}
           >
             <div className="w-full my-[.5rem]">
-              <label
-                htmlFor="name"
-                className={`${
-                  theme === "dark" ? "text-white" : "text-black"
-                } w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]`}
-              >
-                Name
-              </label>
-              <input
-                className={`${
-                  theme === "dark"
-                    ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
-                    : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
+              <LabelField htmlFor="name" labelName="Name" theme={theme} />
+              <InputField
                 type="text"
                 name="name"
                 id="name"
                 placeholder="Your Name"
+                theme={theme}
               />
             </div>
             <div className="w-full my-[.5rem]">
-              <label
-                htmlFor="email"
-                className={`${
-                  theme === "dark" ? "text-white" : "text-black"
-                } w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]`}
-              >
-                Email
-              </label>
-              <input
-                className={`${
-                  theme === "dark"
-                    ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
-                    : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
+              <LabelField htmlFor="email" labelName="Email" theme={theme} />
+              <InputField
                 type="email"
                 name="email"
-                id="email"
                 placeholder="Email"
+                theme={theme}
               />
             </div>
             <div className="w-full my-[.5rem]">
-              <label
+              <LabelField
                 htmlFor="phoneno"
-                className={`${
-                  theme === "dark" ? "text-white" : "text-black"
-                } w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]`}
-              >
-                Phone number
-              </label>
-              <input
-                min={0}
-                className={`${
-                  theme === "dark"
-                    ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
-                    : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
+                labelName="Phone number"
+                theme={theme}
+              />
+              <InputField
                 type="number"
                 name="phoneno"
                 id="phoneno"
                 placeholder="Enter phone number"
+                theme={theme}
               />
             </div>
             <div className="w-full my-[.5rem]">
-              <label
-                htmlFor="subject"
-                className={`${
-                  theme === "dark" ? "text-white" : "text-black"
-                } w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]`}
-              >
-                Subject
-              </label>
-              <input
-                className={`${
-                  theme === "dark"
-                    ? "text-[#ffffff] bg-[#232323] placeholder:text-[#bfbfbf]"
-                    : "text-[#232323] bg-[#ffffff] placeholder:text-[#232323]"
-                } w-full lg:text-[1rem] md:text-[.80rem] sm:text-[.70rem] rounded py-[0.5rem] px-[0.8rem] my-[0.5rem] border border-gray-500`}
+              <LabelField htmlFor="subject" labelName="Subject" theme={theme} />
+              <InputField
                 type="text"
                 name="subject"
-                id="subject"
-                placeholder="Subject"
+                placeholder="Enter subject"
+                theme={theme}
               />
             </div>
             <div className="w-full my-[.5rem]">
-              <label
-                htmlFor="message"
-                className={`${
-                  theme === "dark" ? "text-white" : "text-black"
-                } w-full lg:text-[1.1rem] md:text-[1rem] sm:text-[.80rem]`}
-              >
-                Message
-              </label>
+              <LabelField htmlFor="message" labelName="Message" theme={theme} />
               <textarea
                 name="message"
                 id="message"
