@@ -4,7 +4,6 @@ import InputField from "../formCompo/InputField.jsx";
 import LabelField from "../formCompo/LabelField.jsx";
 
 const ContactSection = () => {
-  
   const { theme } = useTheme();
 
   return (
