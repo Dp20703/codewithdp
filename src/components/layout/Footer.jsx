@@ -1,74 +1,41 @@
 import { Link } from "react-router-dom";
-import { useTheme } from "../../context/ThemeContext.jsx";
 
 const Footer = () => {
-  const { theme } = useTheme();
+  const linkCSS = `dark:text-[#bbbbbb] dark:hover:text-[#ffffff]
+                    text-[#444444] hover:text-[#232323]
+                    lg:text-xl md:text-[1rem] sm:text-[.80rem]`;
+
+  const imgCSS = `lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full`;
 
   return (
-    <footer
-      className={`${theme === "dark" ? "bg-[#1e1e1e] " : "bg-[#ffffff]"} border-t border-gray-500`}
-    >
+    <footer className="dark:bg-[#1e1e1e] bg-[#ffffff] border-t border-gray-500">
       <section className="flex justify-around gap-5 py-6 px-6">
         <nav>
           <ul className="flex flex-col gap-3 sm:gap-1 justify-center">
-            <li
-              className={`lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1rem] ${
-                theme === "dark"
-                  ? "text-[#e1e1e1] bg-transparent hover:text-[#ffffff]"
-                  : "text-[#1e1e1e] bg-transparnt hover:text-[#444444]"
-              }`}
-            >
+            <li className="lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1rem] text-[#1e1e1e] bg-transparnt hover:text-[#444444] dark:text-[#e1e1e1] dark:bg-transparent dark:hover:text-[#ffffff]">
               Links
             </li>
 
             <li>
-              <Link
-                to="/"
-                className={`${
-                  theme === "dark"
-                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                    : "text-[#444444] hover:text-[#232323]"
-                } lg:text-xl md:text-[1rem] sm:text-[.80rem] active`}
-              >
+              <Link to="/" className={`${linkCSS}`}>
                 Home
               </Link>
             </li>
 
             <li>
-              <Link
-                to="/about"
-                className={`${
-                  theme === "dark"
-                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                    : "text-[#444444] hover:text-[#232323]"
-                } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
-              >
+              <Link to="/about" className={`${linkCSS}`}>
                 About
               </Link>
             </li>
 
             <li>
-              <Link
-                to="/projects"
-                className={`${
-                  theme === "dark"
-                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                    : "text-[#444444] hover:text-[#232323]"
-                } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
-              >
+              <Link to="/projects" className={`${linkCSS}`}>
                 Projects
               </Link>
             </li>
 
             <li>
-              <Link
-                to="/contact"
-                className={`${
-                  theme === "dark"
-                    ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                    : "text-[#444444] hover:text-[#232323]"
-                } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
-              >
+              <Link to="/contact" className={`${linkCSS}`}>
                 Contact
               </Link>
             </li>
@@ -77,26 +44,14 @@ const Footer = () => {
 
         <section>
           <ul className="flex flex-col gap-3 sm:gap-2 justify-center">
-            <li
-              className={`lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1rem] ${
-                theme === "dark"
-                  ? "text-[#e1e1e1] bg-transparent hover:text-[#ffffff]"
-                  : "text-[#1e1e1e] bg-transparnt hover:text-[#444444]"
-              }`}
-            >
+            <li className="lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1rem] text-[#1e1e1e] bg-transparnt hover:text-[#444444] dark:text-[#e1e1e1] dark:bg-transparent dark:hover:text-[#ffffff]">
               Socials
             </li>
 
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-xl md:text-[1rem] sm:text-[.80rem] `}
-            >
+            <li className={`${linkCSS}`}>
               <img
                 src="/assets/icons/github-30.png"
-                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
+                className={`${imgCSS}`}
                 alt="github"
               />{" "}
               <a
@@ -108,16 +63,10 @@ const Footer = () => {
               </a>
             </li>
 
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
-            >
+            <li className={`${linkCSS}`}>
               <img
                 src="/assets/icons/linkedin-48.png"
-                className="p-[.1rem] lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
+                className={`p-[.1rem] ${imgCSS}`}
                 alt="linkedin"
               />{" "}
               <a
@@ -129,16 +78,10 @@ const Footer = () => {
               </a>
             </li>
 
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
-            >
+            <li className={`${linkCSS}`}>
               <img
                 src="/assets/icons/x-50.png"
-                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full p-[.1rem]"
+                className={`${imgCSS} p-[.1rem]`}
                 alt="twitter"
               />{" "}
               <a
@@ -150,16 +93,10 @@ const Footer = () => {
               </a>
             </li>
 
-            <li
-              className={`${
-                theme === "dark"
-                  ? "text-[#bbbbbb] hover:text-[#ffffff]"
-                  : "text-[#444444] hover:text-[#232323]"
-              } lg:text-xl md:text-[1rem] sm:text-[.80rem]`}
-            >
+            <li className={`${linkCSS}`}>
               <img
                 src="/assets/icons/instagram-48.png"
-                className="lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 inline bg-white rounded-full"
+                className={`${imgCSS}`}
                 alt="instagram"
               />{" "}
               <a
@@ -174,11 +111,7 @@ const Footer = () => {
         </section>
       </section>
 
-      <h2
-        className={`${
-          theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
-        } text-center lg:text-[1rem] md:text-[.8rem] sm:text-[.6rem] pb-6`}
-      >
+      <h2 className="dark:text-[#ffffff] text-[#1e1e1e] text-center lg:text-[1rem] md:text-[.8rem] sm:text-[.6rem] pb-6">
         Made with ❤️ in India
       </h2>
     </footer>

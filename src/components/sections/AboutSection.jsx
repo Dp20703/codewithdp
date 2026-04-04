@@ -1,15 +1,13 @@
 import PixelTransition from "../../blocks/Animations/PixelTransition/PixelTransition";
 import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedContent";
-import { useTheme } from "../../context/ThemeContext.jsx";
 
 const AboutSection = () => {
-  const { theme } = useTheme();
   return (
     <section
       id="about-sec"
-      className={`${theme === "dark" ? "bg-[#1e1e1e]" : "bg-[#ffffff]"} 
+      className="dark:bg-[#1e1e1e] bg-[#ffffff]
       sm:h-fit flex lg:flex-row md:flex-row sm:flex-col
-      gap-14 px-[8%] py-10`}
+      gap-14 px-[8%] py-10"
     >
       <div
         id="about-pic"
@@ -33,7 +31,7 @@ const AboutSection = () => {
                 <img
                   src="https://plus.unsplash.com/premium_photo-1746927715759-03f68bbd8c9a?q=80&w=744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="contact"
-                  className="lg:min-h-screen object-cover md:object-center sm:object-right "
+                  className="lg:h-[100dvh] md:h-[40rem] object-cover md:object-center sm:object-right "
                 />
               }
               gridSize={12}
@@ -47,9 +45,8 @@ const AboutSection = () => {
 
       <div
         id="about-text"
-        className={`${theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"}
-           lg:min-h-screen md:h-[40rem] sm:h-fit w-[60%] sm:w-full border border-gray-500 rounded-xl py-12 px-10 
-             `}
+        className="dark:bg-[#232323] bg-[#eaeaea] 
+           lg:min-h-screen md:h-[40rem] sm:h-fit w-[60%] sm:w-full border border-gray-500 rounded-xl py-12 px-10 "
       >
         <AnimatedContent
           distance={150}
@@ -67,17 +64,15 @@ const AboutSection = () => {
             <div className="w-full flex justify-around">
               <div>
                 <h2
-                  className={`${
-                    theme === "dark" ? "text-[#ffffff]" : "text-[#1e1e1e]"
-                  } lg:text-[2rem] md:text-[1.5rem] sm:text-xl font-bold`}
+                  className="dark:text-[#ffffff] text-[#1e1e1e]
+                  lg:text-[2rem] md:text-[1.5rem] sm:text-xl font-bold"
                 >
                   About
                 </h2>
 
                 <h3
-                  className={`${
-                    theme === "dark" ? "text-[#444444]" : "text-[#383838]"
-                  } lg:text-xl md:text-[1rem] sm:text-[1rem]`}
+                  className="dark:text-[#444444] text-[#383838]
+                  lg:text-xl md:text-[1rem] sm:text-[1rem]"
                 >
                   Get to Know Me
                 </h3>
@@ -86,21 +81,15 @@ const AboutSection = () => {
               <a
                 href="/resume.pdf"
                 download="Darshan_Prajapati_Resume.pdf"
-                className={`${
-                  theme === "dark"
-                    ? "text-[#ffffff] bg-[#1e1e1e]"
-                    : "bg-[#1e1e1e] text-[#ffff]"
-                }
-                   explore-btn
-                inline-block  px-6 py-3 rounded-xl shadow-md hover:scale-105 transition h-fit border-gray-400 border-1`}
+                className="explore-btn dark:text-[#ffffff] dark:bg-[#1e1e1e]
+                    bg-[#1e1e1e] text-[#ffff]                
+                    inline-block  px-6 py-3 rounded-xl shadow-md hover:scale-105 transition h-fit border-gray-400 border-1"
               >
                 ⬇ Download CV
               </a>
             </div>
 
-            <div
-              className={`${theme === "dark" ? "text-[#bfbfbf]" : "text-[#232323]"} w-full lg:text-[1.1rem] md:text-[.9rem] sm:text-[.75rem]`}
-            >
+            <div className="dark:text-[#bfbfbf] text-[#232323] w-full lg:text-[1.1rem] md:text-[.9rem] sm:text-[.75rem]">
               <p>
                 I'm Darshan Prajapati, a dedicated MERN stack developer with a
                 passion for crafting clean and functional web applications.

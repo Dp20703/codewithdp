@@ -1,8 +1,7 @@
 import GlareHover from "../../blocks/Animations/GlareHover/GlareHover.jsx";
 import AnimatedContent from "../../blocks/Animations/AnimatedContent/AnimatedContent.jsx";
-import { useTheme } from "../../context/ThemeContext.jsx.jsx";
+
 const ProjectCard = () => {
-  const { theme } = useTheme();
   const projects = [
     {
       title: "StockTally",
@@ -53,6 +52,7 @@ const ProjectCard = () => {
       github: "http://github.com/Dp20703/ems",
     },
   ];
+
   return (
     <>
       {projects.map((project, idx) => {
@@ -72,9 +72,8 @@ const ProjectCard = () => {
             >
               <div
                 id="project-card"
-                className={`${
-                  theme === "dark" ? "bg-[#232323]" : "bg-[#eaeaea]"
-                } lg:h-[38rem] lg:w-[27rem] sm:h-[30rem] sm:w-[17rem] md:h-[36rem] md:w-[22rem] overflow-hidden flex flex-col gap-8   rounded-xl border border-gray-500 p-[2rem]`}
+                className="dark:bg-[#232323] bg-[#eaeaea]
+                 lg:h-[38rem] lg:w-[27rem] sm:h-[30rem] sm:w-[17rem] md:h-[36rem] md:w-[22rem] overflow-hidden flex flex-col gap-8   rounded-xl border border-gray-500 p-[2rem]"
               >
                 <div id="img-sec" className="h-1/2 w-full ">
                   <div
@@ -109,9 +108,8 @@ const ProjectCard = () => {
                     className="flex justify-between items-center w-full flex-wrap"
                   >
                     <h2
-                      className={`${
-                        theme === "dark" ? "text-[#eaeaea]" : "text-[#232323]"
-                      } lg:text-2xl md:text-xl sm:text-[1rem] w-1/2 `}
+                      className="dark:text-[#eaeaea] text-[#232323]
+                       lg:text-2xl md:text-xl sm:text-[1rem] w-1/2 "
                     >
                       {project.title}
                     </h2>
@@ -123,10 +121,9 @@ const ProjectCard = () => {
                       >
                         <img
                           src="/assets/icons/github-30.png"
-                          className={`${
-                            theme === "dark" ? "bg-white" : "bg-transparent"
-                          } lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5
-                    inline rounded-full hover:scale-120 `}
+                          className="dark:bg-white bg-transparent
+                          lg:h-8 lg:w-8 md:h-7 md:w-7 sm:h-5 sm:w-5
+                          inline rounded-full hover:scale-120"
                           alt="github"
                         />{" "}
                       </a>
@@ -135,13 +132,7 @@ const ProjectCard = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span
-                          className={`${
-                            theme === "dark"
-                              ? "text-[#ffffff] bg-[#232323]  hover:bg-[#444444] hover:text-[#eaeaea] border border-solid border-zinc-100"
-                              : "text-[#1e1e1e] bg-[#eaeaea] hover:bg-[#bfbfbf] hover:text-[#232323] border border-solid border-zinc-600"
-                          } px-[.6rem] py-[.1rem] rounded-full lg:text-xl md:text-[1rem] sm:text-[.7rem]`}
-                        >
+                        <span className="dark:text-[#ffffff] dark:bg-[#232323]  dark:hover:bg-[#444444] dark:hover:text-[#eaeaea] dark:border-zinc-100 text-[#1e1e1e] bg-[#eaeaea] hover:bg-[#bfbfbf] hover:text-[#232323] border border-solid border-zinc-600 px-[.6rem] py-[.1rem] rounded-full lg:text-xl md:text-[1rem] sm:text-[.7rem]">
                           <i className="ri-arrow-right-up-long-line lg:text-2xl md:text-xl sm:text-[.8rem]  " />
                         </span>
                       </a>
@@ -149,9 +140,8 @@ const ProjectCard = () => {
                   </div>
                   <p
                     id="project-desc"
-                    className={`${
-                      theme === "dark" ? "text-[#bfbfbf] " : "text-[#232323]"
-                    } lg-text-[1.1rem] md:text-[1rem] sm:text-[.75rem] text-wrap`}
+                    className="dark:text-[#bfbfbf] text-[#232323]
+                    lg-text-[1.1rem] md:text-[1rem] sm:text-[.75rem] text-wrap"
                   >
                     {project.description}
                   </p>

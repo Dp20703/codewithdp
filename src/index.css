@@ -1,4 +1,8 @@
 @import "tailwindcss";
+
+/* Enable dark variant manually */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --primary-color: #1e1e1e;
   --secondary-color: #232323;
@@ -17,7 +21,5 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: var(--primary-color);
-  color: var(--text-color);
   scroll-behavior: auto;
 }

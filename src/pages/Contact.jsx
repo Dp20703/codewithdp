@@ -3,12 +3,12 @@ import Navbar from "../components/layout/Navbar";
 import ContactSection from "../components/sections/ContactSection";
 
 const Contact = () => {
-    document.title = "Contact | codewithdp";
+  document.title = "Contact | codewithdp";
   return (
     <>
       <Navbar />
       <ContactSection />
-      <Footer/>
+      <Footer />
     </>
   );
 };
